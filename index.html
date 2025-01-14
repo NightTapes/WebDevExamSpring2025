@@ -6,6 +6,9 @@
     <link href="Fonts/css/fontawesome.css" rel="stylesheet">
     <link href="Fonts/css/brands.css" rel="stylesheet">
     <link href="Fonts/css/solid.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Forside</title>
 </head>
@@ -25,7 +28,7 @@
             <ul>
                 <li><a href="#">Tips og inspirasjon</a></li>
                 <li><a href="hotell.html">Hotell</a></li>
-                <li><a href="https://www.norwegian.no">Fly</a></li>
+                <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
@@ -45,18 +48,41 @@
 
         <section>
             <h3>Betalingsmetoder</h3>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+            <i class="fa-brands fa-cc-amazon-pay"></i>
         </section>
 
         <section>
             <h3>Nyheter og tilbud</h3>
+            <form id="footer-form">
+                <label for="nyhetsbrev">Meld deg på nyhetsbrev her
+                    <input type="email" id="nyhetsbrev" name="Nyhetsbrev" placeholder="ola@example.com...">
+                </label>
+            </form>
+            <button type="submit" form="footer-form" value="submit">Send</button>
+            <a href="#">Kjøp reisegavekort</a>
         </section>
 
         <section>
             <h3>Kundeservice</h3>
+            <ul>
+                <li><a href="#">Spørsmål og svar</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Tilgjengelighets-erklæring</a></li>
+            </ul>
         </section>
 
         <section>
             <h3>Sosiale medier</h3>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://www.tiktok.com/en/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </section>
     </footer>
     
