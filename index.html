@@ -34,6 +34,64 @@
         </nav>
     </header>
 
+    <header>
+        <section id="front_page_banner"> <!--ADD THE BACKGROUND IMAGE WITH CSS-->
+            <h2>Banner Section</h2> <!--HIDE THIS-->
+        </section>
+
+        <section>
+            <h1>Bestillingskjema</h1><!--H1 siden dette er hovedfunksjonen på denne siden, selv om teksten ikke synes-->
+            <ul> <!--THIS MIGHT BE BETTER AS SOMETHING OTHER THAN A UL. THIS IS JUST TO BE ABLE TO MANIPULATE THESE ELEMENTS-->
+                <li><a href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a></li>
+                <li><a href="#"><i class="fa-solid fa-plane"></i>Fly</a></li>
+                <li><a href="#"><i class="fa-solid fa-city"></i>Storby</a></li>
+                <li><a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a></li>
+                <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonsreiser</a></li>
+            </ul>
+
+            <form>
+                <label for="fra">Fra
+                    <select name="fra" id="fra">
+                        <option value="oslo-lufthavn">Oslo Lufthavn</option>
+                        <option value="torp sandefjord sufthavn">Torp Sandefjord Lufthavn</option>
+                        <option value="bergen lufthavn">Bergen Lufthavn</option>
+                        <option value="alta lufthavn">Alta Lufthavn</option>
+                    </select>
+                </label>
+
+                <label for="til">Til
+                    <select name="til" id="til">
+                        <option value="albania">Albania</option>
+                        <option value="danmark">Danmark</option>
+                        <option value="finland">Finland</option>
+                        <option value="hellas">Hellas</option>
+                    </select>
+                </label>
+
+                <label for="reiselengde">Reiselengde
+                    <select name="reiselengde" id="reiselengde">
+                        <option value="mindre enn 1 uke">Mindre enn 1 uke</option>
+                        <option value="1 uke">1 Uke</option>
+                        <option value="2 uker">2 Uker</option>
+                        <option value="mer enn 2 uker">Mer enn 2 uker</option>
+                    </select>
+                </label>
+
+                <label for="velg-dato">Velg Dato
+                    <input type="date" id="velg-dato" name="velg-dato" required>
+                </label>
+
+                <label for="antall-reisende">Antall Reisende
+                    <input type="number" id="antall-reisende" name="antall-reisende" value="1" min="1" max="50" required>
+                </label>
+
+                <label for="søk">Søk <!--HIDE THIS-->
+                    <input type="submit" id="søk" name="søk" value="Søk">
+                </label>
+            </form>
+        </section>
+    </header>
+
     <main></main>
 
     <footer>
