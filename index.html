@@ -14,24 +14,31 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <ul>
-                <li><a href="#">Opprett en konto</a></li>
-                <li><a href="#"><i class="fa-solid fa-user"></i>Min side</a></li>
-            </ul>
+        <section><!--Var litt usikker på om det var på denne måten dere ønsket av vi delte inn området i 2 deler på, siden "seksjoner" er spesifisert i footeren f.eks. - men ikke her-->
+            <h2>Del 1 av globalt toppområde</h2><!--HIDE THIS-->
+            <nav>
+                <ul>
+                    <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#">Opprett en konto</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>Min side</a></li>
+                </ul>
+            </nav>
+        </section>
 
-            <a href="index.html"><picture>
-                <img src="Images/fav.png" alt="Bilde av logoen vår">
-            </picture></a>
-
-            <ul>
-                <li><a href="#">Tips og inspirasjon</a></li>
-                <li><a href="hotell.html">Hotell</a></li>
-                <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
+        <section>
+            <h2>Del 2 av globalt toppområde</h2><!--HIDE THIS-->
+            <nav>
+                <a href="index.html"><picture>
+                    <img src="Images/fav.png" alt="Bilde av logoen vår">
+                </picture></a>
+                <ul>
+                    <li><a href="index.html#tips-og-inspirasjon">Tips og inspirasjon</a></li>
+                    <li><a href="hotell.html">Hotell</a></li>
+                    <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
+                    <li><a href="#footer">Kontakt</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <header>
@@ -92,9 +99,92 @@
         </section>
     </header>
 
-    <main></main>
+    <main>
+        <section><!--ADD THE BACKGROUND IMAGE WITH CSS-->
+            <h2>Kampanjeseksjon</h2><!--HIDE THIS-->
+            <p>Bestill sommerens beste uke Fly + hotell, 7 dager Fra 3 298,-</p>
+            <a href="hotell.html">Bestill i dag</a>
+        </section>
 
-    <footer>
+        <section>
+            <h2>Tilbudsseksjon</h2><!--HIDE THIS-->
+            <article>
+                <h3>Få eksklusive tilbud</h3>
+                <a href="#">Logg inn/opprett konto og få rabattkoder<i class="fa-solid fa-angles-right"></i></a>
+            </article>
+
+            <article>
+                <h3>Billige resteplasser</h3>
+                <a href="#">Opptil 50% rabatt<i class="fa-solid fa-angles-right"></i></a>
+            </article>
+
+            <article>
+                <h3>Mars - spar opptil 5000,-</h3>
+                <a href="#">Sikre deg et ferie kupp<i class="fa-solid fa-angles-right"></i></a>
+            </article>
+        </section>
+
+        <section id="tips-og-inspirasjon">
+            <h2>Tips og inspirasjon</h2>
+            <article>
+                <picture>
+                    <img src="#" alt="#">
+                </picture>
+                <h3>Greske favoritter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend at turpis in efficitur.</p>
+                <a href="#">Fra kr 3970,-<i class="fa-solid fa-arrow-right"></i></a>
+                <p>Ukens Deal</p><!--REMEMBER TO MOVE THIS WITH CSS, GIVE IT AN ID OR CLASS WHICHEVER ONE IS EASIER SINCE THRES 2 OF THESE-->
+            </article>
+
+            <article>
+                <picture>
+                    <img src="#" alt="#">
+                </picture>
+                <h3>Solskinnspriser - bestill i dag!</h3>
+                <p>Aliquam ac erat mauris. Sed vel feugiat augue, nec rutrum nisi. Suspendisse ac euismod neque.</p>
+                <a href="#">Fra kr 3203,-<i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+            <article>
+                <picture>
+                    <img src="#" alt="#">
+                </picture>
+                <h3>Storbyferie</h3>
+                <p>Morbi sed aliquam leo. Maecenas feugiat ultrices consequat. Mauris nulla lorem, sodales at risus viverra.</p>
+                <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+            <article>
+                <picture>
+                    <img src="#" alt="#">
+                </picture>
+                <h3>Besøk påskefavoritten London</h3>
+                <p>Integer semper felis molestie tristique vehicula. Donec imperdiet mauris lobortis purus interdum, vitae feugiat purus sollicitudin.</p>
+                <a href="#">Fra kr 2150,-<i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+            <article>
+                <picture>
+                    <img src="#" alt="#">
+                </picture>
+                <h3>Skiferie</h3>
+                <p>Nullam dictum ultrices libero nec sagittis. Donec malesuada interdum felis, quis volutpat turpis suscipit ut.</p>
+                <a href="#">Se alle skistedene<i class="fa-solid fa-arrow-right"></i></a>
+                <p>Nyhet</p><!--REMEMBER TO MOVE THIS WITH CSS, GIVE IT AN ID OR CLASS WHICHEVER ONE IS EASIER SINCE THRES 2 OF THESE-->
+            </article>
+
+            <article>
+                <picture>
+                    <img src="#" alt="#">
+                </picture>
+                <h3>Spar opptil 7000,- til sommer</h3>
+                <p>Cras eu lectus a erat suscipit feugiat. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+                <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer">
         <section>
             <h3>Flagg</h3> <!--HIDE THIS-->
                 <p><img src="Flags/sweden.png" alt="Sveriges flagg">Sverige</p>
