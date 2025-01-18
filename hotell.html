@@ -13,6 +13,270 @@
     <title>Hotell</title>
 </head>
 <body>
-    
+    <header>
+        <section>
+            <h2>Del 1 av globalt toppområde</h2><!--HIDE THIS-->
+            <nav>
+                <ul>
+                    <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#">Opprett en konto</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>Min side</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <h2>Del 2 av globalt toppområde</h2><!--HIDE THIS-->
+            <nav>
+                <a href="index.html"><picture>
+                    <img src="Images/fav.png" alt="Bilde av logoen vår">
+                </picture></a>
+                <ul>
+                    <li><a href="index.html#tips-og-inspirasjon">Tips og inspirasjon</a></li>
+                    <li><a href="hotell.html">Hotell</a></li>
+                    <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
+                    <li><a href="#footer">Kontakt</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <header>
+        <section><!--Kunne hatt hver picture tag inni en article tag, men jeg synes ikke det blir helt rett semantisk sett-->
+            <h2>Bilde Galleri</h2><!--HIDE THIS-->
+            <picture><!--These images might need to be encased in a div-->
+                <img src="Images/landscape-2016308_640.jpg" alt="En solstol foran et basseng.">
+            </picture>
+
+            <picture>
+                <img src="Images/beach-1836467_640.jpg" alt="Folk som løper ut i sjøen fra en strand.">
+            </picture>
+
+            <picture>
+                <img src="Images/sea-4768869_1920.jpg" alt="bølger fra havet faller inn over en strand.">
+            </picture>
+
+            <picture>
+                <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
+            </picture>
+
+            <picture>
+                <img src="Images/holiday-2733322_1280.jpg" alt="en kvinne i et basseng ser utover vannet og hus bygget over det.">
+            </picture>
+
+            <picture>
+                <img src="Images/beach-666122_640.jpg" alt="en brygge som går ut til hus med tak av strå.">
+            </picture>
+
+            <section><!--Kanskje bruk en div her?-->
+                <h4>Pil ikoner</h4><!--HIDE THIS-->
+                <i class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-angle-right"></i>
+            </section>
+
+            <section>
+                <h4>Bilde og antall</h4><!--HIDE THIS-->
+                <i class="fa-regular fa-image"></i>
+                <p>49</p>
+            </section>
+
+            <i class="fa-regular fa-heart" style="color: #f0001e;"></i><!--Mabye do this in the style doc instead-->
+        </section>
+
+        <section>
+            <h2>Navigering av innhold</h2><!--HIDE THIS-->
+            <nav>
+                <ul>
+                    <li><a href="#">Oversikt</a></li>
+                    <li><a href="#fasiliteter">Fasiliteter</a></li>
+                    <li><a href="#tilgjengelige-rom">Rom</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <h2>Parga Beach</h2>
+            <section>
+                <h4>Soler</h4><!--HIDE THIS-->
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-regular fa-sun"></i><!--CHANGE THIS ONE-->
+            </section>
+
+            <section>
+                <h4>Score</h4><!--HIDE THIS-->
+                <p>8,9</p>
+                <p>Fantastisk</p>
+            </section>
+
+            <a href="#">Se alle anmeldelsene<i class="fa-solid fa-angle-right"></i></a>
+        </section>
+
+        <section id="fasiliteter">
+            <h2>Fasiliteter</h2>
+            <p>Cras vel ex faucibus, imperdiet lectus vel, ultricies velit. Sed posuere lobortis ex, eget posuere leo egestas sed. Curabitur venenatis vitae lacus eu ultrices.</p>
+
+            <section>
+                <h4>Ikoner og beskrivelser</h4><!--HIDE THIS-->
+                <i class="fa-solid fa-paw">Kjæledyr-vennlig</i>
+                <i class="fa-solid fa-bell-concierge">Romservice</i>
+                <i class="fa-solid fa-mug-hot">Frokost</i>
+                <i class="fa-solid fa-martini-glass">Bar</i>
+                <i class="fa-solid fa-spa">Spa</i>
+                <i class="fa-solid fa-dumbbell">Treningssenter</i>
+            </section>
+
+            <a href="#">Se alle eiendomsfasiliteter<i class="fa-solid fa-angle-right"></i></a>
+        </section>
+
+        <section>
+            <h2>Kart</h2><!--HER SKAL IFRAME GOOGLE MAPS KARTET VÆRE-->
+        </section>
+
+        <section id="tilgjengelige-rom">
+            <h2>Tilgjengelige rom</h2>
+            <article>
+                <picture>
+                    <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
+                </picture>
+                <h3>Junior Suite</h3>
+                <ul>
+                    <li>Plass til 2</li>
+                    <li>Queen size-seng</li>
+                </ul>
+                <section>
+                    <h4>Score</h4><!--HIDE THIS-->
+                    <p>8,9</p>
+                    <p>59 anmeldelser</p>
+                </section>
+                <ul>
+                    <li>6 789 kr</li>
+                    <li>for 3 netter, 1 rom</li>
+                    <li>2 263 kr per natt</li>
+                    <li>Ink moms og avgifter</li>
+                </ul>
+            </article>
+
+            <article>
+                <picture>
+                    <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
+                </picture>
+                <h3>Junior Suite</h3>
+                <ul>
+                    <li>Plass til 2</li>
+                    <li>Queen size-seng</li>
+                </ul>
+                <section>
+                    <h4>Score</h4><!--HIDE THIS-->
+                    <p>8,9</p>
+                    <p>59 anmeldelser</p>
+                </section>
+                <ul>
+                    <li>6 789 kr</li>
+                    <li>for 3 netter, 1 rom</li>
+                    <li>2 263 kr per natt</li>
+                    <li>Ink moms og avgifter</li>
+                </ul>
+            </article>
+
+            <article>
+                <picture>
+                    <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
+                </picture>
+                <h3>Junior Suite</h3>
+                <ul>
+                    <li>Plass til 2</li>
+                    <li>Queen size-seng</li>
+                </ul>
+                <section>
+                    <h4>Score</h4><!--HIDE THIS-->
+                    <p>8,9</p>
+                    <p>59 anmeldelser</p>
+                </section>
+                <ul>
+                    <li>6 789 kr</li>
+                    <li>for 3 netter, 1 rom</li>
+                    <li>2 263 kr per natt</li>
+                    <li>Ink moms og avgifter</li>
+                </ul>
+            </article>
+
+            <article>
+                <picture>
+                    <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
+                </picture>
+                <h3>Junior Suite</h3>
+                <ul>
+                    <li>Plass til 2</li>
+                    <li>Queen size-seng</li>
+                </ul>
+                <section>
+                    <h4>Score</h4><!--HIDE THIS-->
+                    <p>8,9</p>
+                    <p>59 anmeldelser</p>
+                </section>
+                <ul>
+                    <li>6 789 kr</li>
+                    <li>for 3 netter, 1 rom</li>
+                    <li>2 263 kr per natt</li>
+                    <li>Ink moms og avgifter</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <section>
+            <h3>Flagg</h3> <!--HIDE THIS-->
+                <p><img src="Flags/sweden.png" alt="Sveriges flagg">Sverige</p>
+                <p><img src="Flags/denmark.png" alt="Danmarks flagg">Danmark</p>
+                <p><img src="Flags/norway.png" alt="Norges flagg">Norge</p>
+                <p><img src="Flags/material.png" alt="Finlands flagg">Suomi</p>
+                <p><img src="Flags/netherlands.png" alt="Nederlands flagg">Nederland</p>
+        </section>
+
+        <section>
+            <h3>Betalingsmetoder</h3>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-apple-pay"></i>
+            <i class="fa-brands fa-cc-amazon-pay"></i>
+        </section>
+
+        <section>
+            <h3>Nyheter og tilbud</h3>
+            <form id="footer-form">
+                <label for="nyhetsbrev">Meld deg på nyhetsbrev her
+                    <input type="email" id="nyhetsbrev" name="Nyhetsbrev" placeholder="ola@example.com...">
+                </label>
+            </form>
+            <button type="submit" form="footer-form" value="submit">Send</button>
+            <a href="#">Kjøp reisegavekort</a>
+        </section>
+
+        <section>
+            <h3>Kundeservice</h3>
+            <ul>
+                <li><a href="#">Spørsmål og svar</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Tilgjengelighets-erklæring</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Sosiale medier</h3>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://www.tiktok.com/en/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </section>
+    </footer>
 </body>
 </html>
