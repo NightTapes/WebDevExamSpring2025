@@ -1,3 +1,5 @@
+/*Globalt for både mobil og desktop*/
+
 * {
     box-sizing: border-box;
 }
@@ -5,3 +7,8 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+
+#order-page-siste-trinn {
+    display: none;
+}
+

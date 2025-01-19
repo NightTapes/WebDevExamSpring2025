@@ -41,7 +41,123 @@
         </section>
     </header>
 
-    <main></main>
+    <main><!--Som jeg forstod det skulle alt innholdet på denne siden være i "main". Dette er da progressbaren (som også kunne vært i en header), skjemaet som tar imot info, og detaljene om den valgte reisen-->
+        <section>
+            <h2>Progressbar</h2><!--HIDE THIS-->
+            <nav>
+                <ul>
+                    <li><a href="index.html#bestillingskjema">Søk<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="hotell.html">Søkeresultater<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="hotell.html#tilgjengelige-rom">Rom<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="https://www.norwegian.no" target="_blank">Fly<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="#">Tillegg<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="order.html">OPPLYSNINGER<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a>Bestill</a></li><!--LEGG TIL NÅR DEN ER LAGET-->
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <h2>Oppgi dine bestillingsopplysninger</h2>
+            <form>
+                <fieldset><!--Kunne hatt en egen "form" tag for hver av disse 2 fieldsettene, men vet ikke om det hadde vært bedre eller dårligere. Ut ifra det jeg fant på nettet ser det ut som det er helt greit å ha flere fieldsets i én form-tag.-->
+                    <legend>VOKSEN 18+ HOVEDBESTILLER</legend><!--Ingen av disse har noen placeholdere på bildene, så jeg bruker heller ingen.-->
+                    <label for="fornavn-hoved">FORNAVN (IFØLGE PASS):
+                        <input type="text" id="fornavn-hoved" name="fornavn-hoved" maxlength="30" required>
+                    </label>
+                    <label for="etternavn-hoved">ETTERNAVN (IFØLGE PASS):
+                        <input type="text" id="etternavn-hoved" name="etternavn-hoved" maxlength="30" required>
+                    </label>
+                    <label for="fødselsdato-hoved">FØDSELSDATO:
+                        <input type="date" id="fødselsdato-hoved" name="fødselsdato-hoved" required><!--Dag, måned, og år er spredt ut i sin egen boks på bildene av nettsiden. Kom tilbake til det. Ser ut som 3 input felt med number attributten.-->
+                    </label>
+                    <label for="kjønn-kvinne">KVINNE
+                        <input type="radio" id="kjønn-kvinne" name="kjønn-hoved" value="kvinne" required>
+                    </label>
+                    <label for="kjønn-mann">MANN
+                        <input type="radio" id="kjønn-mann" name="kjønn-hoved" value="mann" required>
+                    </label>
+                    <label for="epost-hoved">E-POSTADRESSE:
+                        <input type="email" id="epost-hoved" name="epost-hoved" required>
+                    </label>
+                    <label for="telefon-hoved">TELEFONNUMMER:
+                        <input type="tel" id="telefon-hoved" name="telefon-hoved" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    </label>
+                    <label for="gateadresse-hoved">GATEADRESSE:
+                        <input type="text" id="gateadresse-hoved" name="gateadresse-hoved" maxlength="50" required>
+                    </label>
+                    <label for="postnr-hoved">POSTNUMMER:
+                        <input type="number" id="postnr-hoved" name="postnr-hoved" min="0000" max="9999" required>
+                    </label>
+                    <label for="poststed-hoved">POSTSTED:
+                        <input type="text" id="poststed-hoved" name="poststed-hoved" maxlength="50" required>
+                    </label>
+                    <label for="land-hoved">LAND:
+                        <select name="land-hoved" id="land-hoved">
+                            <option value="velg-et-land">Velg et land</option>
+                            <option value="albania">Albania</option>
+                            <option value="danmark">Danmark</option>
+                            <option value="finland">Finland</option>
+                            <option value="hellas">Hellas</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>VOKSEN 18+</legend>
+                    <label for="fornavn">FORNAVN (IFØLGE PASS):
+                        <input type="text" id="fornavn" name="fornavn" maxlength="30" required>
+                    </label>
+                    <label for="etternavn">ETTERNAVN (IFØLGE PASS):
+                        <input type="text" id="etternavn" name="etternavn" maxlength="30" required>
+                    </label>
+                    <label for="fødselsdato">FØDSELSDATO:
+                        <input type="date" id="fødselsdato" name="fødselsdato" required><!--Dag, måned, og år er spredt ut i sin egen boks på bildene av nettsiden. Kom tilbake til det. Ser ut som 3 input felt med number attributten.-->
+                    </label>
+                    <label for="kjønn-kvinne-2">KVINNE
+                        <input type="radio" id="kjønn-kvinne-2" name="kjønn-hoved-2" value="kvinne" required>
+                    </label>
+                    <label for="kjønn-mann-2">MANN
+                        <input type="radio" id="kjønn-mann-2" name="kjønn-hoved-2" value="mann" required>
+                    </label>
+                </fieldset>
+
+                <label for="order-page-siste-trinn">Siste Trinn<i class="fa-solid fa-arrow-right"></i>
+                    <input type="submit" id="order-page-siste-trinn">
+                </label>
+            </form>
+        </section>
+
+        <section>
+            <h2>Oversiktseksjon</h2><!--HIDE THIS-->
+            <details open>
+                <summary>Dine Valg<i class="fa-solid fa-angle-right"></i></summary><!--BARE DISPLAY: NONE; SUMMARY FOR Å SKJULE DEN, OG ALLTID HA DEN ÅPEN PÅ DESKTOP-->
+                <picture>
+                    <img src="Images/landscape-2016308_640.jpg" alt="En solstol foran et basseng.">
+                </picture>
+                <h3>Parga Beach</h3>
+                <section>
+                    <h4>Soler</h4><!--HIDE THIS-->
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-regular fa-sun"></i><!--CHANGE THIS ONE-->
+                </section>
+                <section>
+                    <h4>Info og ikoner</h4><!--HIDE THIS-->
+                    <i class="fa-solid fa-location-dot">Hellas, Parga</i>
+                    <i class="fa-solid fa-calendar">Man 5 mai - man 12 mai 2025</i>
+                    <i class="fa-regular fa-user">2 Voksne</i>
+                    <i class="fa-solid fa-bed">Deluxerom, Balkong og ikke spesifisert utsikt.</i>
+                    <i class="fa-solid fa-utensils">Frokostbuffé</i>
+                    <i class="fa-solid fa-plane-departure">Oslo Lufthavn - Preveza</i>
+                </section>
+                <p>22 003,-</p>
+                <p>19 803,-</p>
+            </details>
+        </section>
+    </main>
 
     <footer id="footer">
         <section>
