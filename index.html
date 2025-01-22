@@ -13,226 +13,231 @@
     <title>Forside</title>
 </head>
 <body>
-    <header>
-        <section><!--Var litt usikker på om det var på denne måten dere ønsket av vi delte inn området i 2 deler på, siden "seksjoner" er spesifisert i footeren f.eks. - men ikke her-->
-            <h2>Del 1 av globalt toppområde</h2><!--HIDE THIS-->
-            <nav>
-                <ul>
-                    <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#">Opprett en konto</a></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i>Min side</a></li>
+    <div id="forside-grid-container">
+        <header id="forside-header-1">
+            <section id="forside-header-1-section-1" class="header-sections"><!--Var litt usikker på om det var på denne måten dere ønsket av vi delte inn området i 2 deler på, siden "seksjoner" er spesifisert i footeren f.eks. - men ikke her-->
+                <h2 class="hidden-headlines">Del 1 av globalt toppområde</h2><!--HIDE THIS-->
+                <section id="del-1-nav">
+                    <h3 class="hidden-headlines">Nav område</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li class="hidden-header-nav-elements"><a href="#">Opprett en konto</a></li>
+                            <li><a href="#"><i class="fa-solid fa-user"></i>Min side</a></li><!--Kom tilbake til dette - gjemme bare teksten på mobil versjon-->
+                            <li><a href="#"><i class="fa-solid fa-bars hidden-hamburger-menu"></i></a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+
+            <section id="forside-header-1-section-2" class="header-sections">
+                <h2 class="hidden-headlines">Del 2 av globalt toppområde</h2><!--HIDE THIS-->
+                <nav id="del-2-nav">
+                    <a href="index.html"><picture>
+                        <img src="Images/fav.png" alt="Bilde av logoen vår" id="logo">
+                    </picture></a>
+                    <ul class="hidden-header-nav-elements">
+                        <li><a href="index.html#tips-og-inspirasjon">Tips og inspirasjon</a></li>
+                        <li><a href="hotell.html">Hotell</a></li>
+                        <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
+                        <li><a href="#footer">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <header id="forside-header-2">
+            <section id="front_page_banner"> <!--ADD THE BACKGROUND IMAGE WITH CSS-->
+                <h2 class="hidden-headlines">Banner Section</h2> <!--HIDE THIS-->
+            </section>
+
+            <section id="bestillingskjema">
+                <h1 class="hidden-headlines">Bestillingskjema</h1><!--H1 siden dette er hovedfunksjonen på denne siden, selv om teksten ikke synes-->
+                <ul> <!--THIS MIGHT BE BETTER AS SOMETHING OTHER THAN A UL. THIS IS JUST TO BE ABLE TO MANIPULATE THESE ELEMENTS-->
+                    <li><a href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a></li>
+                    <li><a href="#"><i class="fa-solid fa-plane"></i>Fly</a></li>
+                    <li><a href="#"><i class="fa-solid fa-city"></i>Storby</a></li>
+                    <li><a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a></li>
+                    <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonsreiser</a></li>
                 </ul>
-            </nav>
-        </section>
 
-        <section>
-            <h2>Del 2 av globalt toppområde</h2><!--HIDE THIS-->
-            <nav>
-                <a href="index.html"><picture>
-                    <img src="Images/fav.png" alt="Bilde av logoen vår">
-                </picture></a>
+                <form>
+                    <label for="fra">Fra
+                        <select name="fra" id="fra">
+                            <option value="oslo-lufthavn">Oslo Lufthavn</option>
+                            <option value="torp sandefjord sufthavn">Torp Sandefjord Lufthavn</option>
+                            <option value="bergen lufthavn">Bergen Lufthavn</option>
+                            <option value="alta lufthavn">Alta Lufthavn</option>
+                        </select>
+                    </label>
+
+                    <label for="til">Til
+                        <select name="til" id="til">
+                            <option value="albania">Albania</option>
+                            <option value="danmark">Danmark</option>
+                            <option value="finland">Finland</option>
+                            <option value="hellas">Hellas</option>
+                        </select>
+                    </label>
+
+                    <label for="reiselengde">Reiselengde
+                        <select name="reiselengde" id="reiselengde">
+                            <option value="mindre enn 1 uke">Mindre enn 1 uke</option>
+                            <option value="1 uke">1 Uke</option>
+                            <option value="2 uker">2 Uker</option>
+                            <option value="mer enn 2 uker">Mer enn 2 uker</option>
+                        </select>
+                    </label>
+
+                    <label for="velg-dato">Velg Dato
+                        <input type="date" id="velg-dato" name="velg-dato" required>
+                    </label>
+
+                    <label for="antall-reisende">Antall Reisende
+                        <input type="number" id="antall-reisende" name="antall-reisende" value="1" min="1" max="50" required>
+                    </label>
+
+                    <label for="søk" class="hidden-headlines">Søk <!--HIDE THIS-->
+                        <input type="submit" id="søk" name="søk" value="Søk">
+                    </label>
+                </form>
+            </section>
+        </header>
+
+        <main id="forside-main" class="main-max-width">
+            <section><!--ADD THE BACKGROUND IMAGE WITH CSS-->
+                <h2 class="hidden-headlines">Kampanjeseksjon</h2><!--HIDE THIS-->
+                <p>Bestill sommerens beste uke Fly + hotell, 7 dager Fra 3 298,-</p>
+                <a href="hotell.html">Bestill i dag</a>
+            </section>
+
+            <section>
+                <h2 class="hidden-headlines">Tilbudsseksjon</h2><!--HIDE THIS-->
+                <article>
+                    <h3>Få eksklusive tilbud</h3>
+                    <a href="#">Logg inn/opprett konto og få rabattkoder<i class="fa-solid fa-angles-right"></i></a>
+                </article>
+
+                <article>
+                    <h3>Billige resteplasser</h3>
+                    <a href="#">Opptil 50% rabatt<i class="fa-solid fa-angles-right"></i></a>
+                </article>
+
+                <article>
+                    <h3>Mars - spar opptil 5000,-</h3>
+                    <a href="#">Sikre deg et ferie kupp<i class="fa-solid fa-angles-right"></i></a>
+                </article>
+            </section>
+
+            <section id="tips-og-inspirasjon">
+                <h2>Tips og inspirasjon</h2>
+                <article>
+                    <picture>
+                        <img src="#" alt="#">
+                    </picture>
+                    <h3>Greske favoritter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend at turpis in efficitur.</p>
+                    <a href="#">Fra kr 3970,-<i class="fa-solid fa-arrow-right"></i></a>
+                    <p>Ukens Deal</p><!--REMEMBER TO MOVE THIS WITH CSS, GIVE IT AN ID OR CLASS WHICHEVER ONE IS EASIER SINCE THRES 2 OF THESE-->
+                </article>
+
+                <article>
+                    <picture>
+                        <img src="#" alt="#">
+                    </picture>
+                    <h3>Solskinnspriser - bestill i dag!</h3>
+                    <p>Aliquam ac erat mauris. Sed vel feugiat augue, nec rutrum nisi. Suspendisse ac euismod neque.</p>
+                    <a href="#">Fra kr 3203,-<i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article>
+                    <picture>
+                        <img src="#" alt="#">
+                    </picture>
+                    <h3>Storbyferie</h3>
+                    <p>Morbi sed aliquam leo. Maecenas feugiat ultrices consequat. Mauris nulla lorem, sodales at risus viverra.</p>
+                    <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article>
+                    <picture>
+                        <img src="#" alt="#">
+                    </picture>
+                    <h3>Besøk påskefavoritten London</h3>
+                    <p>Integer semper felis molestie tristique vehicula. Donec imperdiet mauris lobortis purus interdum, vitae feugiat purus sollicitudin.</p>
+                    <a href="#">Fra kr 2150,-<i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article>
+                    <picture>
+                        <img src="#" alt="#">
+                    </picture>
+                    <h3>Skiferie</h3>
+                    <p>Nullam dictum ultrices libero nec sagittis. Donec malesuada interdum felis, quis volutpat turpis suscipit ut.</p>
+                    <a href="#">Se alle skistedene<i class="fa-solid fa-arrow-right"></i></a>
+                    <p>Nyhet</p><!--REMEMBER TO MOVE THIS WITH CSS, GIVE IT AN ID OR CLASS WHICHEVER ONE IS EASIER SINCE THRES 2 OF THESE-->
+                </article>
+
+                <article>
+                    <picture>
+                        <img src="#" alt="#">
+                    </picture>
+                    <h3>Spar opptil 7000,- til sommer</h3>
+                    <p>Cras eu lectus a erat suscipit feugiat. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+                    <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <section>
+                <h3 class="hidden-headlines">Flagg</h3> <!--HIDE THIS-->
+                    <p><img src="Flags/sweden.png" alt="Sveriges flagg">Sverige</p>
+                    <p><img src="Flags/denmark.png" alt="Danmarks flagg">Danmark</p>
+                    <p><img src="Flags/norway.png" alt="Norges flagg">Norge</p>
+                    <p><img src="Flags/material.png" alt="Finlands flagg">Suomi</p>
+                    <p><img src="Flags/netherlands.png" alt="Nederlands flagg">Nederland</p>
+            </section>
+
+            <section>
+                <h3>Betalingsmetoder</h3>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+                <i class="fa-brands fa-cc-amazon-pay"></i>
+            </section>
+
+            <section>
+                <h3>Nyheter og tilbud</h3>
+                <form id="footer-form">
+                    <label for="nyhetsbrev">Meld deg på nyhetsbrev her
+                        <input type="email" id="nyhetsbrev" name="Nyhetsbrev" placeholder="ola@example.com...">
+                    </label>
+                </form>
+                <button type="submit" form="footer-form" value="submit">Send</button>
+                <a href="#">Kjøp reisegavekort</a>
+            </section>
+
+            <section>
+                <h3>Kundeservice</h3>
                 <ul>
-                    <li><a href="index.html#tips-og-inspirasjon">Tips og inspirasjon</a></li>
-                    <li><a href="hotell.html">Hotell</a></li>
-                    <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
-                    <li><a href="#footer">Kontakt</a></li>
+                    <li><a href="#">Spørsmål og svar</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Tilgjengelighets-erklæring</a></li>
                 </ul>
-            </nav>
-        </section>
-    </header>
+            </section>
 
-    <header>
-        <section id="front_page_banner"> <!--ADD THE BACKGROUND IMAGE WITH CSS-->
-            <h2>Banner Section</h2> <!--HIDE THIS-->
-        </section>
-
-        <section id="bestillingskjema">
-            <h1>Bestillingskjema</h1><!--H1 siden dette er hovedfunksjonen på denne siden, selv om teksten ikke synes-->
-            <ul> <!--THIS MIGHT BE BETTER AS SOMETHING OTHER THAN A UL. THIS IS JUST TO BE ABLE TO MANIPULATE THESE ELEMENTS-->
-                <li><a href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a></li>
-                <li><a href="#"><i class="fa-solid fa-plane"></i>Fly</a></li>
-                <li><a href="#"><i class="fa-solid fa-city"></i>Storby</a></li>
-                <li><a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a></li>
-                <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonsreiser</a></li>
-            </ul>
-
-            <form>
-                <label for="fra">Fra
-                    <select name="fra" id="fra">
-                        <option value="oslo-lufthavn">Oslo Lufthavn</option>
-                        <option value="torp sandefjord sufthavn">Torp Sandefjord Lufthavn</option>
-                        <option value="bergen lufthavn">Bergen Lufthavn</option>
-                        <option value="alta lufthavn">Alta Lufthavn</option>
-                    </select>
-                </label>
-
-                <label for="til">Til
-                    <select name="til" id="til">
-                        <option value="albania">Albania</option>
-                        <option value="danmark">Danmark</option>
-                        <option value="finland">Finland</option>
-                        <option value="hellas">Hellas</option>
-                    </select>
-                </label>
-
-                <label for="reiselengde">Reiselengde
-                    <select name="reiselengde" id="reiselengde">
-                        <option value="mindre enn 1 uke">Mindre enn 1 uke</option>
-                        <option value="1 uke">1 Uke</option>
-                        <option value="2 uker">2 Uker</option>
-                        <option value="mer enn 2 uker">Mer enn 2 uker</option>
-                    </select>
-                </label>
-
-                <label for="velg-dato">Velg Dato
-                    <input type="date" id="velg-dato" name="velg-dato" required>
-                </label>
-
-                <label for="antall-reisende">Antall Reisende
-                    <input type="number" id="antall-reisende" name="antall-reisende" value="1" min="1" max="50" required>
-                </label>
-
-                <label for="søk">Søk <!--HIDE THIS-->
-                    <input type="submit" id="søk" name="søk" value="Søk">
-                </label>
-            </form>
-        </section>
-    </header>
-
-    <main>
-        <section><!--ADD THE BACKGROUND IMAGE WITH CSS-->
-            <h2>Kampanjeseksjon</h2><!--HIDE THIS-->
-            <p>Bestill sommerens beste uke Fly + hotell, 7 dager Fra 3 298,-</p>
-            <a href="hotell.html">Bestill i dag</a>
-        </section>
-
-        <section>
-            <h2>Tilbudsseksjon</h2><!--HIDE THIS-->
-            <article>
-                <h3>Få eksklusive tilbud</h3>
-                <a href="#">Logg inn/opprett konto og få rabattkoder<i class="fa-solid fa-angles-right"></i></a>
-            </article>
-
-            <article>
-                <h3>Billige resteplasser</h3>
-                <a href="#">Opptil 50% rabatt<i class="fa-solid fa-angles-right"></i></a>
-            </article>
-
-            <article>
-                <h3>Mars - spar opptil 5000,-</h3>
-                <a href="#">Sikre deg et ferie kupp<i class="fa-solid fa-angles-right"></i></a>
-            </article>
-        </section>
-
-        <section id="tips-og-inspirasjon">
-            <h2>Tips og inspirasjon</h2>
-            <article>
-                <picture>
-                    <img src="#" alt="#">
-                </picture>
-                <h3>Greske favoritter</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend at turpis in efficitur.</p>
-                <a href="#">Fra kr 3970,-<i class="fa-solid fa-arrow-right"></i></a>
-                <p>Ukens Deal</p><!--REMEMBER TO MOVE THIS WITH CSS, GIVE IT AN ID OR CLASS WHICHEVER ONE IS EASIER SINCE THRES 2 OF THESE-->
-            </article>
-
-            <article>
-                <picture>
-                    <img src="#" alt="#">
-                </picture>
-                <h3>Solskinnspriser - bestill i dag!</h3>
-                <p>Aliquam ac erat mauris. Sed vel feugiat augue, nec rutrum nisi. Suspendisse ac euismod neque.</p>
-                <a href="#">Fra kr 3203,-<i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-
-            <article>
-                <picture>
-                    <img src="#" alt="#">
-                </picture>
-                <h3>Storbyferie</h3>
-                <p>Morbi sed aliquam leo. Maecenas feugiat ultrices consequat. Mauris nulla lorem, sodales at risus viverra.</p>
-                <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-
-            <article>
-                <picture>
-                    <img src="#" alt="#">
-                </picture>
-                <h3>Besøk påskefavoritten London</h3>
-                <p>Integer semper felis molestie tristique vehicula. Donec imperdiet mauris lobortis purus interdum, vitae feugiat purus sollicitudin.</p>
-                <a href="#">Fra kr 2150,-<i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-
-            <article>
-                <picture>
-                    <img src="#" alt="#">
-                </picture>
-                <h3>Skiferie</h3>
-                <p>Nullam dictum ultrices libero nec sagittis. Donec malesuada interdum felis, quis volutpat turpis suscipit ut.</p>
-                <a href="#">Se alle skistedene<i class="fa-solid fa-arrow-right"></i></a>
-                <p>Nyhet</p><!--REMEMBER TO MOVE THIS WITH CSS, GIVE IT AN ID OR CLASS WHICHEVER ONE IS EASIER SINCE THRES 2 OF THESE-->
-            </article>
-
-            <article>
-                <picture>
-                    <img src="#" alt="#">
-                </picture>
-                <h3>Spar opptil 7000,- til sommer</h3>
-                <p>Cras eu lectus a erat suscipit feugiat. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
-                <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <section>
-            <h3>Flagg</h3> <!--HIDE THIS-->
-                <p><img src="Flags/sweden.png" alt="Sveriges flagg">Sverige</p>
-                <p><img src="Flags/denmark.png" alt="Danmarks flagg">Danmark</p>
-                <p><img src="Flags/norway.png" alt="Norges flagg">Norge</p>
-                <p><img src="Flags/material.png" alt="Finlands flagg">Suomi</p>
-                <p><img src="Flags/netherlands.png" alt="Nederlands flagg">Nederland</p>
-        </section>
-
-        <section>
-            <h3>Betalingsmetoder</h3>
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-cc-mastercard"></i>
-            <i class="fa-brands fa-cc-paypal"></i>
-            <i class="fa-brands fa-cc-apple-pay"></i>
-            <i class="fa-brands fa-cc-amazon-pay"></i>
-        </section>
-
-        <section>
-            <h3>Nyheter og tilbud</h3>
-            <form id="footer-form">
-                <label for="nyhetsbrev">Meld deg på nyhetsbrev her
-                    <input type="email" id="nyhetsbrev" name="Nyhetsbrev" placeholder="ola@example.com...">
-                </label>
-            </form>
-            <button type="submit" form="footer-form" value="submit">Send</button>
-            <a href="#">Kjøp reisegavekort</a>
-        </section>
-
-        <section>
-            <h3>Kundeservice</h3>
-            <ul>
-                <li><a href="#">Spørsmål og svar</a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Tilgjengelighets-erklæring</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Sosiale medier</h3>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-            <a href="https://www.tiktok.com/en/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        </section>
-    </footer>
-    
+            <section>
+                <h3>Sosiale medier</h3>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://www.tiktok.com/en/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>

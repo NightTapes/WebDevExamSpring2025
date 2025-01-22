@@ -15,23 +15,24 @@
 <body>
     <header>
         <section>
-            <h2>Del 1 av globalt toppområde</h2><!--HIDE THIS-->
+            <h2 class="hidden-headlines">Del 1 av globalt toppområde</h2><!--HIDE THIS-->
             <nav>
                 <ul>
                     <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#">Opprett en konto</a></li>
+                    <li class="hidden-header-nav-elements"><a href="#">Opprett en konto</a></li>
                     <li><a href="#"><i class="fa-solid fa-user"></i>Min side</a></li>
                 </ul>
             </nav>
+            <i class="fa-solid fa-bars hidden-hamburger-menu"></i>
         </section>
 
         <section>
-            <h2>Del 2 av globalt toppområde</h2><!--HIDE THIS-->
+            <h2 class="hidden-headlines">Del 2 av globalt toppområde</h2><!--HIDE THIS-->
             <nav>
                 <a href="index.html"><picture>
                     <img src="Images/fav.png" alt="Bilde av logoen vår">
                 </picture></a>
-                <ul>
+                <ul class="hidden-header-nav-elements">
                     <li><a href="index.html#tips-og-inspirasjon">Tips og inspirasjon</a></li>
                     <li><a href="hotell.html">Hotell</a></li>
                     <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
@@ -43,7 +44,7 @@
 
     <header>
         <section><!--Kunne hatt hver picture tag inni en article tag, men jeg synes ikke det blir helt rett semantisk sett-->
-            <h2>Bilde Galleri</h2><!--HIDE THIS-->
+            <h2 class="hidden-headlines">Bilde Galleri</h2><!--HIDE THIS-->
             <picture><!--These images might need to be encased in a div-->
                 <img src="Images/landscape-2016308_640.jpg" alt="En solstol foran et basseng.">
             </picture>
@@ -69,13 +70,13 @@
             </picture>
 
             <section><!--Kanskje bruk en div her?-->
-                <h4>Pil ikoner</h4><!--HIDE THIS-->
+                <h4 class="hidden-headlines">Pil ikoner</h4><!--HIDE THIS-->
                 <i class="fa-solid fa-angle-left"></i>
                 <i class="fa-solid fa-angle-right"></i>
             </section>
 
             <section>
-                <h4>Bilde og antall</h4><!--HIDE THIS-->
+                <h4 class="hidden-headlines">Bilde og antall</h4><!--HIDE THIS-->
                 <i class="fa-regular fa-image"></i>
                 <p>49</p>
             </section>
@@ -84,7 +85,7 @@
         </section>
 
         <section>
-            <h2>Navigering av innhold</h2><!--HIDE THIS-->
+            <h2 class="hidden-headlines">Navigering av innhold</h2><!--HIDE THIS-->
             <nav>
                 <ul>
                     <li><a href="#">Oversikt</a></li>
@@ -95,11 +96,11 @@
         </section>
     </header>
 
-    <main>
+    <main class="main-max-width">
         <section>
             <h2>Parga Beach</h2>
             <section>
-                <h4>Soler</h4><!--HIDE THIS-->
+                <h4 class="hidden-headlines">Soler</h4><!--HIDE THIS-->
                 <i class="fa-solid fa-sun"></i>
                 <i class="fa-solid fa-sun"></i>
                 <i class="fa-solid fa-sun"></i>
@@ -108,7 +109,7 @@
             </section>
 
             <section>
-                <h4>Score</h4><!--HIDE THIS-->
+                <h4 class="hidden-headlines">Score</h4><!--HIDE THIS-->
                 <p>8,9</p>
                 <p>Fantastisk</p>
             </section>
@@ -121,7 +122,7 @@
             <p>Cras vel ex faucibus, imperdiet lectus vel, ultricies velit. Sed posuere lobortis ex, eget posuere leo egestas sed. Curabitur venenatis vitae lacus eu ultrices.</p>
 
             <section>
-                <h4>Ikoner og beskrivelser</h4><!--HIDE THIS-->
+                <h4 class="hidden-headlines">Ikoner og beskrivelser</h4><!--HIDE THIS-->
                 <i class="fa-solid fa-paw">Kjæledyr-vennlig</i>
                 <i class="fa-solid fa-bell-concierge">Romservice</i>
                 <i class="fa-solid fa-mug-hot">Frokost</i>
@@ -134,7 +135,7 @@
         </section>
 
         <section><!--Kartet er hentet direkte fra Google Maps sin share funksjon - hvor man kan hente html kode, koden nedenfor, som viser det valgte stedet i et kart-->
-            <h2>Kart</h2><!--HIDE THIS-->
+            <h2 class="hidden-headlines">Kart</h2><!--HIDE THIS-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.9351675270395!2d20.383788354548848!3d39.28561749875282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c632e49c7cda5%3A0x9406a292c1e28ae2!2sParga%20Beach%20Resort!5e1!3m2!1sen!2sno!4v1737475982877!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
@@ -150,7 +151,7 @@
                     <li>Queen size-seng</li>
                 </ul>
                 <section>
-                    <h4>Score</h4><!--HIDE THIS-->
+                    <h4 class="hidden-headlines">Score</h4><!--HIDE THIS-->
                     <p>8,9</p>
                     <p>59 anmeldelser</p>
                 </section>
@@ -172,7 +173,7 @@
                     <li>Queen size-seng</li>
                 </ul>
                 <section>
-                    <h4>Score</h4><!--HIDE THIS-->
+                    <h4 class="hidden-headlines">Score</h4><!--HIDE THIS-->
                     <p>8,9</p>
                     <p>59 anmeldelser</p>
                 </section>
@@ -194,7 +195,7 @@
                     <li>Queen size-seng</li>
                 </ul>
                 <section>
-                    <h4>Score</h4><!--HIDE THIS-->
+                    <h4 class="hidden-headlines">Score</h4><!--HIDE THIS-->
                     <p>8,9</p>
                     <p>59 anmeldelser</p>
                 </section>
@@ -216,7 +217,7 @@
                     <li>Queen size-seng</li>
                 </ul>
                 <section>
-                    <h4>Score</h4><!--HIDE THIS-->
+                    <h4 class="hidden-headlines">Score</h4><!--HIDE THIS-->
                     <p>8,9</p>
                     <p>59 anmeldelser</p>
                 </section>
@@ -232,7 +233,7 @@
 
     <footer id="footer">
         <section>
-            <h3>Flagg</h3> <!--HIDE THIS-->
+            <h3 class="hidden-headlines">Flagg</h3> <!--HIDE THIS-->
                 <p><img src="Flags/sweden.png" alt="Sveriges flagg">Sverige</p>
                 <p><img src="Flags/denmark.png" alt="Danmarks flagg">Danmark</p>
                 <p><img src="Flags/norway.png" alt="Norges flagg">Norge</p>

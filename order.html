@@ -15,23 +15,24 @@
 <body>
     <header>
         <section>
-            <h2>Del 1 av globalt toppområde</h2><!--HIDE THIS-->
+            <h2 class="hidden-headlines">Del 1 av globalt toppområde</h2><!--HIDE THIS-->
             <nav>
                 <ul>
                     <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#">Opprett en konto</a></li>
+                    <li class="hidden-header-nav-elements"><a href="#">Opprett en konto</a></li>
                     <li><a href="#"><i class="fa-solid fa-user"></i>Min side</a></li>
                 </ul>
             </nav>
+            <i class="fa-solid fa-bars hidden-hamburger-menu"></i>
         </section>
 
         <section>
-            <h2>Del 2 av globalt toppområde</h2><!--HIDE THIS-->
+            <h2 class="hidden-headlines">Del 2 av globalt toppområde</h2><!--HIDE THIS-->
             <nav>
                 <a href="index.html"><picture>
                     <img src="Images/fav.png" alt="Bilde av logoen vår">
                 </picture></a>
-                <ul>
+                <ul class="hidden-header-nav-elements">
                     <li><a href="index.html#tips-og-inspirasjon">Tips og inspirasjon</a></li>
                     <li><a href="hotell.html">Hotell</a></li>
                     <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
@@ -41,9 +42,9 @@
         </section>
     </header>
 
-    <main><!--Som jeg forstod det skulle alt innholdet på denne siden være i "main". Dette er da progressbaren (som også kunne vært i en header), skjemaet som tar imot info, og detaljene om den valgte reisen-->
+    <main main-max-width><!--Som jeg forstod det skulle alt innholdet på denne siden være i "main". Dette er da progressbaren (som også kunne vært i en header), skjemaet som tar imot info, og detaljene om den valgte reisen-->
         <section>
-            <h2>Progressbar</h2><!--HIDE THIS-->
+            <h2 class="hidden-headlines">Progressbar</h2><!--HIDE THIS-->
             <nav>
                 <ul>
                     <li><a href="index.html#bestillingskjema">Søk<i class="fa-solid fa-angle-right"></i></a></li>
@@ -129,7 +130,7 @@
         </section>
 
         <section>
-            <h2>Oversiktseksjon</h2><!--HIDE THIS-->
+            <h2 class="hidden-headlines">Oversiktseksjon</h2><!--HIDE THIS-->
             <details open>
                 <summary>Dine Valg<i class="fa-solid fa-angle-right"></i></summary><!--BARE DISPLAY: NONE; SUMMARY FOR Å SKJULE DEN, OG ALLTID HA DEN ÅPEN PÅ DESKTOP-->
                 <picture>
@@ -137,7 +138,7 @@
                 </picture>
                 <h3>Parga Beach</h3>
                 <section>
-                    <h4>Soler</h4><!--HIDE THIS-->
+                    <h4 class="hidden-headlines">Soler</h4><!--HIDE THIS-->
                     <i class="fa-solid fa-sun"></i>
                     <i class="fa-solid fa-sun"></i>
                     <i class="fa-solid fa-sun"></i>
@@ -145,7 +146,7 @@
                     <i class="fa-regular fa-sun"></i><!--CHANGE THIS ONE-->
                 </section>
                 <section>
-                    <h4>Info og ikoner</h4><!--HIDE THIS-->
+                    <h4 class="hidden-headlines">Info og ikoner</h4><!--HIDE THIS-->
                     <i class="fa-solid fa-location-dot">Hellas, Parga</i>
                     <i class="fa-solid fa-calendar">Man 5 mai - man 12 mai 2025</i>
                     <i class="fa-regular fa-user">2 Voksne</i>
@@ -161,7 +162,7 @@
 
     <footer id="footer">
         <section>
-            <h3>Flagg</h3> <!--HIDE THIS-->
+            <h3 class="hidden-headlines">Flagg</h3> <!--HIDE THIS-->
                 <p><img src="Flags/sweden.png" alt="Sveriges flagg">Sverige</p>
                 <p><img src="Flags/denmark.png" alt="Danmarks flagg">Danmark</p>
                 <p><img src="Flags/norway.png" alt="Norges flagg">Norge</p>
