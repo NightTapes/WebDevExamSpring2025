@@ -17,11 +17,15 @@ body {
     visibility: hidden; /*Kanskje endre til display none slik at de ikke tar opp plass*/
 }
 
+.removed-headlines {
+    display: none; /*Denne er for overskriftene som ikke gir noe semantisk eller hjelpsom info, og trenger derfor ikke bli sett av f.eks. skjermopplesere*/
+}
+
 .main-max-width {
     max-width: 1000px;
 }
 
-#logo {width: 75px; padding-left: 5px;}
+#logo {width: 75px;}
 
 /*For Mobil*/
 @media only screen and (max-width:800px) {
@@ -38,27 +42,12 @@ body {
         "footer";
     }
 
-    #forside-header-1 {
-        grid-area: header-1;
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 80px;
-        align-items: center;
+    #main-header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        section{display: flex;}
 
-    }
-
-    #forside-header-1-section-1 {
-        grid-row: 1;
-        grid-column: 2;
-        display: grid;
-        justify-self: end;
-        section {align-items: end;}
-    }
-
-    #forside-header-1-section-2 {
-        grid-row: 1;
-        grid-column: 1;
-        display: grid;
     }
 
     #forside-header-2 {
@@ -85,12 +74,13 @@ body {
 
     #del-1-nav {
         nav ul {display: flex; list-style: none;}
+        nav ul li a {text-decoration: none; color: black;}
         a {display: flex; padding: 5px;}
         i {display: flex; font-size: 35px;}
     }
 
-    #del-2-nav {
-        a {display: flex;}
+    #hidden-text {
+        a {font-size: 0;}/*Gjemmer teksten i taggen på mobil-versjonen, men beholder ikonet*/
     }
 }
 
