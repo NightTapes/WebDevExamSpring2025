@@ -7,6 +7,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     max-width: 1400px;
+    margin: 0;
 }
 
 #order-page-siste-trinn {
@@ -21,7 +22,7 @@ body {
     display: none; /*Denne er for overskriftene som ikke gir noe semantisk eller hjelpsom info, og trenger derfor ikke bli sett av f.eks. skjermopplesere*/
 }
 
-.main-max-width {
+.main-max-width { /*KOM TILBAKE TIL DETTE*/
     max-width: 1000px;
 }
 
@@ -29,38 +30,6 @@ body {
 
 /*For Mobil*/
 @media only screen and (max-width:800px) {
-
-    /*Lager en egen grid til forsiden*/
-    #forside-grid-container {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "header-1"
-        "header-2"
-        "main"
-        "footer";
-    }
-
-    #main-header {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
-        section{display: flex;}
-
-    }
-
-    #forside-header-2 {
-        grid-area: header-2;
-    }
-
-    #forside-main {
-        grid-area: main;
-    }
-    
-    #footer {
-        grid-area: footer;
-    }
 
     /*Header Navigasjons område*/
     .hidden-header-nav-elements {
@@ -72,15 +41,101 @@ body {
         nav {display: flex;}
     }
 
+    #main-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        section{
+            display: flex;
+            padding: 10px;
+        }
+    }
+
     #del-1-nav {
-        nav ul {display: flex; list-style: none;}
-        nav ul li a {text-decoration: none; color: black;}
+        nav ul {display: flex; list-style: none; margin: 0;}
+        nav ul li a {text-decoration: none; color: black; padding-left: 10px;}
         a {display: flex; padding: 5px;}
         i {display: flex; font-size: 35px;}
     }
 
     #hidden-text {
         a {font-size: 0;}/*Gjemmer teksten i taggen på mobil-versjonen, men beholder ikonet*/
+    }
+
+    /*Footeren*/
+    #footer {
+        background-color: #252525;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #flagg {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        section {
+            display: flex; 
+            flex-wrap: wrap; 
+            flex-direction: row; 
+            color: white; 
+            padding-top: 15px;
+        }
+        section picture img {width: 40px; margin: 10px;}
+    }
+
+    #betalingsmetoder {
+        color: white;
+        width: 100%;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        i {padding: 5px; font-size: 30px;}
+    }
+
+    #nyheter-og-tilbud {
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        form fieldset label input {
+            margin-left: 5px; 
+            margin-top: 15px; 
+            margin-bottom: 15px; 
+            padding: 5px; 
+            border-radius: 5px;
+        }
+        form fieldset button {
+            padding: 5px;
+            background-color: #ffcf40; 
+            border: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+        }
+        #footer-form{padding-bottom: 15px;}
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    #kundeservice {
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        ul {list-style: none; padding-left: 0;}
+        ul a {text-decoration: none; color: white;}
+    }
+
+    #sosiale-medier {
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        a {
+            color: white; 
+            padding: 10px;
+            font-size: 35px;
+        }
     }
 }
 

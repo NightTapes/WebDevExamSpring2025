@@ -45,7 +45,7 @@
         </section>
     </header>
 
-    <main main-max-width><!--Som jeg forstod det skulle alt innholdet på denne siden være i "main". Dette er da progressbaren (som også kunne vært i en header), skjemaet som tar imot info, og detaljene om den valgte reisen-->
+    <main><!--Som jeg forstod det skulle alt innholdet på denne siden være i "main". Dette er da progressbaren (som også kunne vært i en header), skjemaet som tar imot info, og detaljene om den valgte reisen-->
         <section>
             <h2 class="hidden-headlines">Progressbar</h2><!--HIDE THIS-->
             <nav>
@@ -164,16 +164,45 @@
     </main>
 
     <footer id="footer">
-        <section>
-            <h3 class="hidden-headlines">Flagg</h3> <!--HIDE THIS-->
-                <p><img src="Flags/sweden.png" alt="Sveriges flagg">Sverige</p>
-                <p><img src="Flags/denmark.png" alt="Danmarks flagg">Danmark</p>
-                <p><img src="Flags/norway.png" alt="Norges flagg">Norge</p>
-                <p><img src="Flags/material.png" alt="Finlands flagg">Suomi</p>
-                <p><img src="Flags/netherlands.png" alt="Nederlands flagg">Nederland</p>
+        <section id="flagg" aria-label="Flagg">
+            <h3 class="removed-headlines">Flagg</h3> <!--HIDE THIS-->
+            <section>
+                <picture>
+                    <img src="Flags/sweden.png" alt="Sveriges flagg">
+                </picture>
+                <h4>Sverige</h4>
+            </section>
+
+            <section>
+                <picture>
+                    <img src="Flags/denmark.png" alt="Danmarks flagg">
+                </picture>
+                <h4>Danmark</h4>
+            </section>
+
+            <section>
+                <picture>
+                    <img src="Flags/norway.png" alt="Norges flagg">
+                </picture>
+                <h4>Norge</h4>
+            </section>
+
+            <section>
+                <picture>
+                    <img src="Flags/material.png" alt="Finlands flagg">
+                </picture>
+                <h4>Suomi</h4>
+            </section>
+
+            <section>
+                <picture>
+                    <img src="Flags/netherlands.png" alt="Nederlands flagg">
+                </picture>
+                <h4>Nederland</h4>
+            </section>
         </section>
 
-        <section>
+        <section id="betalingsmetoder">
             <h3>Betalingsmetoder</h3>
             <i class="fa-brands fa-cc-visa"></i>
             <i class="fa-brands fa-cc-mastercard"></i>
@@ -182,18 +211,21 @@
             <i class="fa-brands fa-cc-amazon-pay"></i>
         </section>
 
-        <section>
+        <section id="nyheter-og-tilbud">
             <h3>Nyheter og tilbud</h3>
             <form id="footer-form">
-                <label for="nyhetsbrev">Meld deg på nyhetsbrev her
-                    <input type="email" id="nyhetsbrev" name="Nyhetsbrev" placeholder="ola@example.com...">
-                </label>
+                <fieldset>
+                    <legend>Meld deg på nyhetsbrev her</legend>
+                    <label for="nyhetsbrev">
+                        <input type="email" id="nyhetsbrev" name="Nyhetsbrev" placeholder="ola@example.com...">
+                    </label>
+                    <button type="submit" form="footer-form" value="submit" aria-label="Send">Send</button>
+                </fieldset>
             </form>
-            <button type="submit" form="footer-form" value="submit">Send</button>
             <a href="#">Kjøp reisegavekort</a>
         </section>
 
-        <section>
+        <section id="kundeservice">
             <h3>Kundeservice</h3>
             <ul>
                 <li><a href="#">Spørsmål og svar</a></li>
@@ -203,7 +235,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="sosiale-medier">
             <h3>Sosiale medier</h3>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
