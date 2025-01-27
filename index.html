@@ -46,59 +46,83 @@
     </header>
 
     <header id="forside-header-2">
-        <section id="front_page_banner"> <!--ADD THE BACKGROUND IMAGE WITH CSS-->
-            <h2 class="hidden-headlines">Banner Section</h2> <!--HIDE THIS-->
+        <section id="front_page_banner">
+            <h2 class="removed-headlines" aria-label="Banner seksjon bilde">Banner Section</h2> <!--HIDE THIS-->
+            <picture>
+                <img src="Images/sea-4768869_1920.jpg" alt="Bølger beveger seg inn mot en strand">
+            </picture>
         </section>
 
         <section id="bestillingskjema">
-            <h1 class="hidden-headlines">Bestillingskjema</h1><!--H1 siden dette er hovedfunksjonen på denne siden, selv om teksten ikke synes-->
-            <ul> <!--THIS MIGHT BE BETTER AS SOMETHING OTHER THAN A UL. THIS IS JUST TO BE ABLE TO MANIPULATE THESE ELEMENTS-->
-                <li><a href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a></li>
-                <li><a href="#"><i class="fa-solid fa-plane"></i>Fly</a></li>
-                <li><a href="#"><i class="fa-solid fa-city"></i>Storby</a></li>
-                <li><a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a></li>
-                <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonsreiser</a></li>
-            </ul>
+            <h1 class="removed-headlines" aria-label="Bestillingskjema">Bestillingskjema</h1><!--H1 siden dette er hovedfunksjonen på denne siden, selv om teksten ikke synes-->
+            <section id="bestillingskjema-linker">
+                <h4 class="removed-headlines" aria-label="Bestillingskjema linker">Bestillingskjema linker</h4>
+                <a href="#" id="fly-og-hotell"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a>
+                <a href="#"><i class="fa-solid fa-plane"></i>Fly</a>
+                <a href="#"><i class="fa-solid fa-city"></i>Storby</a>
+                <a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a>
+                <a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonsreiser</a>
+            </section>
+            <section id="scrolle-pil">
+                <h4 class="removed-headlines" aria-label="Scrolle pil">Scrolle pil</h4>
+                <a><i class="fa-solid fa-angle-right"></i></a>
+            </section>
 
-            <form>
-                <label for="fra">Fra
-                    <select name="fra" id="fra">
-                        <option value="oslo-lufthavn">Oslo Lufthavn</option>
-                        <option value="torp sandefjord sufthavn">Torp Sandefjord Lufthavn</option>
-                        <option value="bergen lufthavn">Bergen Lufthavn</option>
-                        <option value="alta lufthavn">Alta Lufthavn</option>
-                    </select>
-                </label>
+            <form id="bestillingskjema-form">
+                <fieldset>
+                    <legend>Fra</legend>
+                    <label for="fra">
+                        <select name="fra" id="fra">
+                            <option value="oslo-lufthavn">Oslo Lufthavn</option>
+                            <option value="torp sandefjord sufthavn">Torp Sandefjord Lufthavn</option>
+                            <option value="bergen lufthavn">Bergen Lufthavn</option>
+                            <option value="alta lufthavn">Alta Lufthavn</option>
+                        </select>
+                    </label>
+                </fieldset>
 
-                <label for="til">Til
-                    <select name="til" id="til">
-                        <option value="albania">Albania</option>
-                        <option value="danmark">Danmark</option>
-                        <option value="finland">Finland</option>
-                        <option value="hellas">Hellas</option>
-                    </select>
-                </label>
+                <fieldset>
+                    <legend>Til</legend>
+                    <label for="til">
+                        <select name="til" id="til">
+                            <option value="albania">Albania</option>
+                            <option value="danmark">Danmark</option>
+                            <option value="finland">Finland</option>
+                            <option value="hellas">Hellas</option>
+                        </select>
+                    </label>
+                </fieldset>
 
-                <label for="reiselengde">Reiselengde
-                    <select name="reiselengde" id="reiselengde">
-                        <option value="mindre enn 1 uke">Mindre enn 1 uke</option>
-                        <option value="1 uke">1 Uke</option>
-                        <option value="2 uker">2 Uker</option>
-                        <option value="mer enn 2 uker">Mer enn 2 uker</option>
-                    </select>
-                </label>
+                <section id="bestillingskjema-form-på-rad-seksjon">
+                    <h4 class="removed-headlines">På rad</h4>
+                    <fieldset class="bestillingskjema-form-på-rad">
+                        <legend>Reiselengde</legend>
+                        <label for="reiselengde">
+                            <select name="reiselengde" id="reiselengde">
+                                <option value="mindre enn 1 uke">Mindre enn 1 uke</option>
+                                <option value="1 uke">1 Uke</option>
+                                <option value="2 uker">2 Uker</option>
+                                <option value="mer enn 2 uker">Mer enn 2 uker</option>
+                            </select>
+                        </label>
+                    </fieldset>
 
-                <label for="velg-dato">Velg Dato
-                    <input type="date" id="velg-dato" name="velg-dato" required>
-                </label>
+                    <fieldset class="bestillingskjema-form-på-rad">
+                        <legend>Velg Dato</legend>
+                        <label for="velg-dato">
+                            <input type="date" id="velg-dato" name="velg-dato" required>
+                        </label>
+                    </fieldset>
+                </section>
 
-                <label for="antall-reisende">Antall Reisende
-                    <input type="number" id="antall-reisende" name="antall-reisende" value="1" min="1" max="50" required>
-                </label>
+                <fieldset>
+                    <legend>Antall Reisende</legend>
+                    <label for="antall-reisende">
+                        <input type="number" id="antall-reisende" name="antall-reisende" value="1" min="1" max="50" required>
+                    </label>
+                </fieldset>
 
-                <label for="søk" class="hidden-headlines">Søk <!--HIDE THIS-->
-                    <input type="submit" id="søk" name="søk" value="Søk">
-                </label>
+                <button type="submit" form="bestillingskjema-form" value="Søk" aria-label="Søk">Søk</button>
             </form>
         </section>
     </header>

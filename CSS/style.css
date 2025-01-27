@@ -137,6 +137,121 @@ body {
             font-size: 35px;
         }
     }
+
+    /*Forsiden*/
+    #forside-header-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 125px 125px 125px 125px;
+        width: 100%;
+    }
+
+    #front_page_banner {
+        grid-row: 1 / 5;
+        grid-column: 1;
+        width: 100%;
+        picture img {
+            max-width: 100%;
+            height: auto;
+        }/*Nå tar banneren opp hele bredden til siden og gridet uansett størrelse, som spesifisert i oppgave-teksten*/
+    }
+
+    #bestillingskjema {
+        grid-row: 1 / 5;
+        grid-column: 1;
+        align-content: center;
+        background-color: white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        width: 80%;
+        justify-self: center;
+        align-self: center;
+        border-radius: 10px;
+        border-color: #e8e8e8;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 15px;
+        }
+
+        #bestillingskjema-form-på-rad-seksjon {
+            display: flex;
+            width: 100%;
+        }
+        .bestillingskjema-form-på-rad {
+            display: flex;
+            width: 50%;
+        }
+        form fieldset {
+            display: flex;
+            width: 100%;
+            padding: 5px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        form fieldset label, input {width: 100%;}
+        form fieldset label select, input {
+            border: none;
+            background-color: white;
+            color: #e8e8e8;
+            width: 100%;
+        }
+        form fieldset label select option{color: black}
+
+        #scrolle-pil {/*KOM TILBAKE TIL DENNE - PLASSER PÅ HØYRE SIDEN AV SCROLLBAREN*/
+            position: absolute;
+            padding-top: 20px;
+            background: rgba(255, 255, 255, 0.536);
+            font-size: 30px;
+            margin: 5px; 
+            max-width: 100%;
+            a i {
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        #bestillingskjema-linker {
+            justify-self: center;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow: auto;
+            white-space: nowrap;
+            text-align: center;
+            a {
+                padding: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+                list-style: none;
+                text-decoration: none;
+                color: black;
+            }
+            i {padding: 5px; position: relative;}
+            #fly-og-hotell{text-decoration: underline#1ca2c1 3px;}
+        }
+        #bestillingskjema-form{
+            button {
+                padding: 15px;
+                margin: 10px;
+                width: 100%;
+                background-color: #ffcf40; 
+                border: none; 
+                border-radius: 5px; 
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 
