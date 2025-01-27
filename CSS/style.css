@@ -252,6 +252,50 @@ body {
             }
         }
     }
+
+    /*Kampanjeseksjon*/
+    #kampanjeseksjon {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        background-image: url(../Images/holiday-2733322_1280.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        padding-top: 20px;
+        #kampanjeseksjon-tekst {
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 75%;
+            max-height: 150px;
+            background-color: #52d3f0;
+            padding: 20px;
+            #bestill-sommerens-beste-uke{font-size: 20px; font-weight: bold; margin: 0;}
+            #fra-3298{font-size: 25px; font-weight: bold; margin: 0;}
+            #fly-hotell-7-dager{margin: 0;}
+        }
+        a{
+            align-self: flex-end;
+            padding-right: 25px;
+            padding: 15px;
+            margin-top: 10px;
+            margin-right: 60px;
+            color: black;
+            background-color: #ffcf40; 
+            border: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
+    /*Tilbudsseksjon*/
+    
 }
 
 
