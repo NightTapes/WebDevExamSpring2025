@@ -45,55 +45,61 @@
         </section>
     </header>
 
-    <header>
-        <section><!--Kunne hatt hver picture tag inni en article tag, men jeg synes ikke det blir helt rett semantisk sett-->
-            <h2 class="hidden-headlines">Bilde Galleri</h2><!--HIDE THIS-->
-            <picture><!--These images might need to be encased in a div-->
-                <img src="Images/landscape-2016308_640.jpg" alt="En solstol foran et basseng.">
-            </picture>
+    <header id="hotell-header-2">
+        <section id="bilde-galleri">
+            <h2 class="removed-headlines" aria-label="Bilde Galleri">Bilde Galleri</h2><!--HIDE THIS-->
+            <section id="bildene">
+                <h4 class="removed-headlines" aria-label="Bildene">Bildene</h4>
+                <picture><!--These images might need to be encased in a div-->
+                    <img src="Images/landscape-2016308_640.jpg" alt="En solstol foran et basseng.">
+                </picture>
 
-            <picture>
-                <img src="Images/beach-1836467_640.jpg" alt="Folk som løper ut i sjøen fra en strand.">
-            </picture>
+                <picture>
+                    <img src="Images/beach-1836467_640.jpg" alt="Folk som løper ut i sjøen fra en strand.">
+                </picture>
 
-            <picture>
-                <img src="Images/sea-4768869_1920.jpg" alt="bølger fra havet faller inn over en strand.">
-            </picture>
+                <picture>
+                    <img src="Images/sea-4768869_1920.jpg" alt="bølger fra havet faller inn over en strand.">
+                </picture>
 
-            <picture>
-                <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
-            </picture>
+                <picture>
+                    <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
+                </picture>
 
-            <picture>
-                <img src="Images/holiday-2733322_1280.jpg" alt="en kvinne i et basseng ser utover vannet og hus bygget over det.">
-            </picture>
+                <picture>
+                    <img src="Images/holiday-2733322_1280.jpg" alt="en kvinne i et basseng ser utover vannet og hus bygget over det.">
+                </picture>
 
-            <picture>
-                <img src="Images/beach-666122_640.jpg" alt="en brygge som går ut til hus med tak av strå.">
-            </picture>
+                <picture>
+                    <img src="Images/beach-666122_640.jpg" alt="en brygge som går ut til hus med tak av strå.">
+                </picture>
 
-            <section><!--Kanskje bruk en div her?-->
-                <h4 class="hidden-headlines">Pil ikoner</h4><!--HIDE THIS-->
-                <i class="fa-solid fa-angle-left"></i>
-                <i class="fa-solid fa-angle-right"></i>
+                <section id="ikoner-osv">
+                    <h4 class="removed-headlines" aria-label="Ikoner">Ikoner</h4>
+                    <section id="pil-ikoner-bilde-galleri">
+                        <h4 class="removed-headlines" aria-label="Pil Ikoner">Pil ikoner</h4><!--HIDE THIS-->
+                        <i class="fa-solid fa-angle-left"></i>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </section>
+        
+                    <section id="bilde-og-antall-bilder">
+                        <h4 class="removed-headlines" aria-label="Bilde og antall bilder">Bilde og antall</h4><!--HIDE THIS-->
+                        <i class="fa-regular fa-image"></i>
+                        <p>49</p>
+                    </section>
+
+                    <i class="fa-regular fa-heart" style="color: #f0001e;" id="red-heart"></i><!--Mabye do this in the style doc instead-->
+                </section>
             </section>
-
-            <section>
-                <h4 class="hidden-headlines">Bilde og antall</h4><!--HIDE THIS-->
-                <i class="fa-regular fa-image"></i>
-                <p>49</p>
-            </section>
-
-            <i class="fa-regular fa-heart" style="color: #f0001e;"></i><!--Mabye do this in the style doc instead-->
         </section>
 
-        <section>
-            <h2 class="hidden-headlines">Navigering av innhold</h2><!--HIDE THIS-->
+        <section id="hotell-header-navigering">
+            <h2 class="removed-headlines" aria-label="Navigering av innhold">Navigering av innhold</h2><!--HIDE THIS-->
             <nav>
                 <ul>
-                    <li><a href="#">Oversikt</a></li>
-                    <li><a href="#fasiliteter">Fasiliteter</a></li>
-                    <li><a href="#tilgjengelige-rom">Rom</a></li>
+                    <li id="oversikt"><a href="#">Oversikt</a></li>
+                    <li class="ikke-oversikt"><a href="#fasiliteter">Fasiliteter</a></li>
+                    <li class="ikke-oversikt"><a href="#tilgjengelige-rom">Rom</a></li>
                 </ul>
             </nav>
         </section>
