@@ -172,6 +172,7 @@ body {
         border-color: #e8e8e8;
         border-style: solid;
         border-width: 1px;
+        box-shadow: 1px 1px 1px 1px #e8e8e8;
         overflow: hidden;
         form {
             display: flex;
@@ -295,7 +296,98 @@ body {
     }
 
     /*Tilbudsseksjon*/
-    
+    #tilbudsseksjon {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow: auto;
+        position: relative;
+        white-space: nowrap;
+        padding: 25px;
+        article {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e8e8e8;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px #e8e8e8;
+            h3, a {
+                padding: 10px;
+                font-weight: bold;
+            }
+            a {color: #1ca2c1;}
+        }
+    }
+
+    /*Tips og inspirasjon*/
+    #tips-og-inspirasjon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+        padding: 10px;
+        margin: 10px;
+        h2{width: 100%; font-weight: bold;}
+        article {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e8e8e8;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #e8e8e8;
+            margin: 10px;
+            h3 {
+                padding: 10px;
+                font-weight: bold;
+            }
+            h3, a, p {
+                padding: 10px;
+            }
+            a {text-decoration: underline #1ca2c1; text-decoration-thickness: 2px; color: black;}
+            picture img {
+                object-fit: cover;
+                max-width: 100%;
+                height: auto;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            #greske-favoritter {
+                position: relative;
+            }
+            #ukens-deal {
+                color: white;
+                background-color: #1ca2c1;
+                width: 125px;
+                height: auto;
+                border-bottom-right-radius: 20px;
+                border-top-left-radius: 10px;
+                position: absolute;
+                margin-top: 0;
+                font-weight: bold;
+            }
+            #skiferie {
+                position: relative;
+            }
+            #skiferie-nyhet {
+                color: white;
+                background-color: #1ca2c1;
+                width: 75px;
+                height: auto;
+                border-bottom-right-radius: 20px;
+                border-top-left-radius: 10px;
+                position: absolute;
+                margin-top: 0;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 
