@@ -173,6 +173,7 @@ body {
         border-style: solid;
         border-width: 1px;
         box-shadow: 1px 1px 1px 1px #e8e8e8;
+        position: relative;
         overflow: hidden;
         form {
             display: flex;
@@ -205,21 +206,7 @@ body {
         }
         form fieldset label select option{color: black}
 
-        #scrolle-pil {/*KOM TILBAKE TIL DENNE - PLASSER PÅ HØYRE SIDEN AV SCROLLBAREN*/
-            position: absolute;
-            padding-top: 20px;
-            background: rgba(255, 255, 255, 0.536);
-            font-size: 30px;
-            margin: 5px; 
-            max-width: 100%;
-            a i {
-                height: 50px;
-                width: 50px;
-            }
-        }
-
         #bestillingskjema-linker {
-            justify-self: center;
             padding: 20px;
             margin: 0;
             display: flex;
@@ -251,6 +238,18 @@ body {
                 border-radius: 5px; 
                 font-weight: bold;
             }
+        }
+
+        #scrolle-pil {
+            display: flex;
+            align-self: flex-end;
+            background: rgba(255, 255, 255, 0.8);
+            font-size: 30px;
+            max-width: 100%;
+            padding-top: 0;
+            bottom: 320px;
+            margin-right: 15px;
+            position: absolute;
         }
     }
 
@@ -436,6 +435,7 @@ body {
         width: 100%;
         position: absolute;
         color: #f6f5f2;
+        bottom: -32px;
         i {
             border-style: solid;
             border-width: 1px;
