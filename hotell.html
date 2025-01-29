@@ -106,45 +106,68 @@
     </header>
 
     <main class="main-max-width">
-        <section>
+        <section id="parga-beach-score-seksjon">
             <h2>Parga Beach</h2>
             <section>
-                <h4 class="hidden-headlines">Soler</h4><!--HIDE THIS-->
+                <h4 class="removed-headlines" aria-label="Score vist i antall soler">Soler</h4><!--HIDE THIS-->
                 <i class="fa-solid fa-sun"></i>
                 <i class="fa-solid fa-sun"></i>
                 <i class="fa-solid fa-sun"></i>
                 <i class="fa-solid fa-sun"></i>
-                <i class="fa-regular fa-sun"></i><!--CHANGE THIS ONE-->
+                <i class="fa-regular fa-sun"></i>
             </section>
 
-            <section>
-                <h4 class="hidden-headlines">Score</h4><!--HIDE THIS-->
-                <p>8,9</p>
-                <p>Fantastisk</p>
+            <section id="parga-beach-score">
+                <h4 class="removed-headlines" aria-label="Score vist i tall-verdi og beskrivelse">Score</h4><!--HIDE THIS-->
+                <p id="parga-beach-score-score">8,9</p>
+                <p id="fantastisk">Fantastisk</p>
             </section>
 
-            <a href="#">Se alle anmeldelsene<i class="fa-solid fa-angle-right"></i></a>
+            <a href="#" id="se-alle-anmeldelsene">Se alle anmeldelsene<i class="fa-solid fa-angle-right"></i></a>
         </section>
 
         <section id="fasiliteter">
             <h2>Fasiliteter</h2>
             <p>Cras vel ex faucibus, imperdiet lectus vel, ultricies velit. Sed posuere lobortis ex, eget posuere leo egestas sed. Curabitur venenatis vitae lacus eu ultrices.</p>
 
-            <section>
-                <h4 class="hidden-headlines">Ikoner og beskrivelser</h4><!--HIDE THIS-->
-                <i class="fa-solid fa-paw">Kjæledyr-vennlig</i>
-                <i class="fa-solid fa-bell-concierge">Romservice</i>
-                <i class="fa-solid fa-mug-hot">Frokost</i>
-                <i class="fa-solid fa-martini-glass">Bar</i>
-                <i class="fa-solid fa-spa">Spa</i>
-                <i class="fa-solid fa-dumbbell">Treningssenter</i>
+            <section id="ikoner-og-beskrivelser">
+                <h4 class="removed-headlines" aria-label="Ikoner og beskrivelser">Ikoner og beskrivelser</h4><!--HIDE THIS-->
+                <section>
+                    <i class="fa-solid fa-paw"></i>
+                    <h3>Kjæledyr-vennlig</h3>
+                </section>
+
+                <section>
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    <h3>Romservice</h3>
+                </section>
+
+                <section>
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h3>Frokost</h3>
+                </section>
+
+                <section>
+                    <i class="fa-solid fa-martini-glass"></i>
+                    <h3>Bar</h3>
+                </section>
+
+                <section>
+                    <i class="fa-solid fa-spa"></i>
+                    <h3>Spa</h3>
+                </section>
+
+                <section>
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h3>Treningssenter</h3>
+                </section>
             </section>
 
-            <a href="#">Se alle eiendomsfasiliteter<i class="fa-solid fa-angle-right"></i></a>
+            <a href="#" id="se-alle-eiendomsfasiliteter">Se alle eiendomsfasiliteter<i class="fa-solid fa-angle-right"></i></a>
         </section>
 
-        <section><!--Kartet er hentet direkte fra Google Maps sin share funksjon - hvor man kan hente html kode, koden nedenfor, som viser det valgte stedet i et kart-->
-            <h2 class="hidden-headlines">Kart</h2><!--HIDE THIS-->
+        <section id="utforsk-området"><!--Kartet er hentet direkte fra Google Maps sin share funksjon - hvor man kan hente html kode, koden nedenfor, som viser det valgte stedet i et kart-->
+            <h2>Utforsk området</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.9351675270395!2d20.383788354548848!3d39.28561749875282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c632e49c7cda5%3A0x9406a292c1e28ae2!2sParga%20Beach%20Resort!5e1!3m2!1sen!2sno!4v1737475982877!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
@@ -155,17 +178,17 @@
                     <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
                 </picture>
                 <h3>Junior Suite</h3>
-                <ul>
+                <ul class="plass-til-2">
                     <li>Plass til 2</li>
-                    <li>Queen size-seng</li>
+                    <li class="queen-size-seng">Queen size-seng</li>
                 </ul>
-                <section>
-                    <h4 class="hidden-headlines">Score</h4><!--HIDE THIS-->
-                    <p>8,9</p>
+                <section class="score-og-andmeldelser">
+                    <h4 class="removed-headlines" aria-label="Score vist i tall-verdi og antall anmeldelser">Score</h4><!--HIDE THIS-->
+                    <p class="score-tall">8,9</p>
                     <p>59 anmeldelser</p>
                 </section>
-                <ul>
-                    <li>6 789 kr</li>
+                <ul class="ekstra-detaljer">
+                    <li class="ekstra-detaljer-pris">6 789 kr</li>
                     <li>for 3 netter, 1 rom</li>
                     <li>2 263 kr per natt</li>
                     <li>Ink moms og avgifter</li>
@@ -177,17 +200,17 @@
                     <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
                 </picture>
                 <h3>Junior Suite</h3>
-                <ul>
+                <ul class="plass-til-2">
                     <li>Plass til 2</li>
-                    <li>Queen size-seng</li>
+                    <li class="queen-size-seng">Queen size-seng</li>
                 </ul>
-                <section>
-                    <h4 class="hidden-headlines">Score</h4><!--HIDE THIS-->
-                    <p>8,9</p>
+                <section class="score-og-andmeldelser">
+                    <h4 class="removed-headlines" aria-label="Score vist i tall-verdi og antall anmeldelser">Score</h4><!--HIDE THIS-->
+                    <p class="score-tall">8,9</p>
                     <p>59 anmeldelser</p>
                 </section>
-                <ul>
-                    <li>6 789 kr</li>
+                <ul class="ekstra-detaljer">
+                    <li class="ekstra-detaljer-pris">6 789 kr</li>
                     <li>for 3 netter, 1 rom</li>
                     <li>2 263 kr per natt</li>
                     <li>Ink moms og avgifter</li>
@@ -199,17 +222,17 @@
                     <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
                 </picture>
                 <h3>Junior Suite</h3>
-                <ul>
+                <ul class="plass-til-2">
                     <li>Plass til 2</li>
-                    <li>Queen size-seng</li>
+                    <li class="queen-size-seng">Queen size-seng</li>
                 </ul>
-                <section>
-                    <h4 class="hidden-headlines">Score</h4><!--HIDE THIS-->
-                    <p>8,9</p>
+                <section class="score-og-andmeldelser">
+                    <h4 class="removed-headlines" aria-label="Score vist i tall-verdi og antall anmeldelser">Score</h4><!--HIDE THIS-->
+                    <p class="score-tall">8,9</p>
                     <p>59 anmeldelser</p>
                 </section>
-                <ul>
-                    <li>6 789 kr</li>
+                <ul class="ekstra-detaljer">
+                    <li class="ekstra-detaljer-pris">6 789 kr</li>
                     <li>for 3 netter, 1 rom</li>
                     <li>2 263 kr per natt</li>
                     <li>Ink moms og avgifter</li>
@@ -221,22 +244,37 @@
                     <img src="Images/beach-6514331_640.jpg" alt="en lagune med blått vann og skip.">
                 </picture>
                 <h3>Junior Suite</h3>
-                <ul>
+                <ul class="plass-til-2">
                     <li>Plass til 2</li>
-                    <li>Queen size-seng</li>
+                    <li class="queen-size-seng">Queen size-seng</li>
                 </ul>
-                <section>
-                    <h4 class="hidden-headlines">Score</h4><!--HIDE THIS-->
-                    <p>8,9</p>
+                <section class="score-og-andmeldelser">
+                    <h4 class="removed-headlines" aria-label="Score vist i tall-verdi og antall anmeldelser">Score</h4><!--HIDE THIS-->
+                    <p class="score-tall">8,9</p>
                     <p>59 anmeldelser</p>
                 </section>
-                <ul>
-                    <li>6 789 kr</li>
+                <ul class="ekstra-detaljer">
+                    <li class="ekstra-detaljer-pris">6 789 kr</li>
                     <li>for 3 netter, 1 rom</li>
                     <li>2 263 kr per natt</li>
                     <li>Ink moms og avgifter</li>
                 </ul>
             </article>
+
+            <section id="tilgjengelige-rom-scroll-følger-container">
+                <h4 class="removed-headlines">Over-Container</h4>
+                <section id="tilgjengelige-rom-scroll-følger">
+                    <h4 class="removed-headlines">Container</h4>
+                    <section id="tilgjengelige-rom-priser">
+                        <h3>8733 kr</h3>
+                        <p>2 394 kr per natt</p>
+                    </section>
+                    <section id="velg-rom-knapp">
+                        <h4 class="removed-headlines" aria-label="Velg rom">Velg rom</h4>
+                        <a href="#">Velg rom</a>
+                    </section>
+                </section>
+            </section>
         </section>
     </main>
 

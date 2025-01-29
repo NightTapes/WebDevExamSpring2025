@@ -495,6 +495,201 @@ body {
         color: #1ca2c1;}
     }
 
+    /*Main*/
+    /*Parga beach*/
+    #parga-beach-score-seksjon {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        section i {color: #ffcf40;}
+    }
+    #parga-beach-score {
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        align-items: center;
+    }
+    #parga-beach-score-score {
+        background-color: #019101;
+        color: white;
+        padding: 7px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 20px;
+        border-color: #019101;
+    }
+    #fantastisk {
+        margin-left: 10px;
+    }
+    #se-alle-anmeldelsene {
+        font-weight: bold;
+        color: #1ca2c1;
+        text-decoration: none;
+        font-size: 13px; /*Gjorde den så liten siden det er slik den ser ut på bildene*/
+    }
+
+    /*Fasiliteter*/
+    #fasiliteter {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    #ikoner-og-beskrivelser {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 50%;
+            padding: 10px;
+            h3{margin: 0; padding-left: 10px;}
+        }
+    }
+    #se-alle-eiendomsfasiliteter {
+        margin-top: 5px;
+        font-weight: bold;
+        color: #1ca2c1;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    /*utforsk området kartet*/
+    #utforsk-området {
+        max-width: 100%;
+        h2{padding: 10px;}
+        iframe {width: 100%;}
+    }
+
+    /*Tilgjengelige rom*/
+    #tilgjengelige-rom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        article {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e8e8e8;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #e8e8e8;
+            margin: 10px;
+            h3 {
+                padding: 10px;
+                margin-left: 10px;
+                margin-bottom: 0;
+                margin-top: 5px;
+                font-weight: bold;
+            }
+            p {
+                padding: 10px;
+            }
+            ul li {
+                padding: 10px;
+            }
+            picture img {
+                object-fit: cover;
+                max-width: 100%;
+                height: auto;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        }
+        .plass-til-2 {
+            padding: 0;
+            font-size: 13px;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            margin-left: 10px;
+            list-style: none;
+            li {padding-bottom: 0;}
+        }
+        .queen-size-seng {
+            margin-left: 10px;
+            list-style: circle;
+        }
+
+        .score-og-andmeldelser {
+            display: flex;
+            flex-direction: row;
+            padding-left: 10px;
+            margin-left: 10px;
+            p {font-weight: bold;}
+        }
+        .score-tall {
+            background-color: #019101;
+            color: white;
+            padding: 7px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 20px;
+            border-color: #019101;
+        }
+        .ekstra-detaljer {
+            padding-left: 0;
+            margin-left: 20px;
+            margin-top: 0;
+            list-style: none;
+            font-size: 13px;
+            li {padding: 0;}
+        }
+        .ekstra-detaljer-pris {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #tilgjengelige-rom-scroll-følger-container {
+            /*Denne oppfører seg ganske rart og jeg vet ikke hvorfor. Den virker som den skal på noen skjermstørrelser. Mens på andre, eller når man justerer 
+            på skjermstørrelsen, så slutter den å vise seg av og til - og andre ganger gjør endringer på skjermstørrelsen at den fungerer igjen.
+            Så hvis du tilfeldigvis ikke kan se at denne faktisk funker, så prøv å endre på skjermstørrelsen :)*/
+            position: sticky;
+            bottom: 0;
+            top: 0;
+            background-color: white;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-left-style: solid;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-width: 1px;
+            border-color: #e8e8e8;
+        }
+        #tilgjengelige-rom-scroll-følger {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        #tilgjengelige-rom-priser{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            h3, p {margin: 2px;}
+            p{font-size: 13px;}
+        }
+        #velg-rom-knapp{
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            height: 40px;
+            background-color: #1ca2c1;
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+
     /**/
 }
 
