@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Bestilling</title>
 </head>
-<body>
+<body id="body">
     <header id="main-header">
-        <section class="header-sections">
+        <section class="header-sections"><!--Var litt usikker på om det var på denne måten dere ønsket av vi delte inn området i 2 deler på, siden "seksjoner" er spesifisert i footeren f.eks. - men ikke her-->
             <h2 class="removed-headlines">Del 1 av globalt toppområde</h2><!--HIDE THIS-->
             <section id="del-1-nav">
-                <h3 class="hidden-headlines">Nav område</h3>
+                <h3 class="removed-headlines" aria-label="Navigerings område">Nav område</h3>
                 <nav>
                     <ul>
                         <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li class="hidden-header-nav-elements"><a href="#">Opprett en konto</a></li>
+                        <li class="hidden-header-nav-elements" id="opprett-en-konto"><a href="#">Opprett en konto</a></li>
                         <li id="hidden-text"><a href="#"><i class="fa-solid fa-user"></i>Min side</a></li>
-                        <li><a href="#"><i class="fa-solid fa-bars hidden-hamburger-menu"></i></a></li>
+                        <li id="hidden-hamburger-menu"><a href="#"><i class="fa-solid fa-bars"></i></a></li><!--Spurte emneansvarlig, og fikk i svar at hamburgermenyen ikke trengte å være funksjonell - bare et ikon-->
                     </ul>
                 </nav>
             </section>
@@ -45,7 +45,7 @@
         </section>
     </header>
 
-    <main><!--Som jeg forstod det skulle alt innholdet på denne siden være i "main". Dette er da progressbaren (som også kunne vært i en egen header), skjemaet som tar imot info, og detaljene om den valgte reisen-->
+    <main class="main-max-width"><!--Som jeg forstod det skulle alt innholdet på denne siden være i "main". Dette er da progressbaren (som også kunne vært i en egen header), skjemaet som tar imot info, og detaljene om den valgte reisen-->
         <section id="bestillingsside-progressbar">
             <h2 class="removed-headlines" aria-label="Progressbar">Progressbar</h2><!--HIDE THIS-->
             <nav>

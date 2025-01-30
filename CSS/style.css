@@ -6,7 +6,6 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    max-width: 1400px;
     margin: 0;
 }
 
@@ -20,10 +19,6 @@ body {
 
 .removed-headlines {
     display: none; /*Denne er for overskriftene som ikke gir noe semantisk eller hjelpsom info, og trenger derfor ikke bli sett av f.eks. skjermopplesere*/
-}
-
-.main-max-width { /*KOM TILBAKE TIL DETTE*/
-    max-width: 1000px;
 }
 
 #logo {width: 75px;}
@@ -893,20 +888,164 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
+/*-----------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
 
 
 /*For Desktop*/
 @media only screen and (min-width:800px) {
-    .hidden-hamburger-menu {
+    #hidden-hamburger-menu {
         display: none;
+    }
+
+    #body {
+        max-width: 1400px;
+        width: 100%;
+        margin: auto;
+    }
+
+    /*Global header og footer*/
+    .main-max-width {
+        max-width: 1000px;
+    }
+
+    #main-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        section{
+            display: flex;
+            padding: 10px;
+        }
+    }
+
+    .header-sections {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #del-1-nav {
+        justify-content: flex-end;
+        width: 100%;
+        nav ul {display: flex; list-style: none; margin: 0;}
+        nav ul li {margin-left: 10px;}
+        nav ul li a {text-decoration: none; color: black; padding-left: 10px;}
+        a {display: flex; padding: 5px;}
+        i {display: flex; font-size: 20px; margin-left: 5px; margin-right: 5px;}
+    }
+    #opprett-en-konto {
+        display: flex;
+        align-items: center;
+        border-style: solid;
+        border-color: #1ca2c1;
+        border-width: 2px;
+        border-radius: 20px;
+        a{color: #1ca2c1 !important; font-size: 17px; font-weight: bold;}
+    }
+    #hidden-text {
+        display: flex;
+        align-items: center;
+        border-style: solid;
+        border-color: #1ca2c1;
+        border-width: 2px;
+        border-radius: 20px;
+        a{color: #1ca2c1 !important; font-size: 17px; font-weight: bold;}
+    }
+
+    #del-2-nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            li a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    /*Footeren*/
+    #footer {
+        background-color: #252525;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    #flagg {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        section {
+            display: flex; 
+            flex-wrap: wrap; 
+            flex-direction: row; 
+            color: white; 
+            padding-top: 15px;
+        }
+        section picture img {width: 40px; margin: 10px;}
+    }
+
+    #betalingsmetoder {
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        i {padding: 5px; font-size: 30px;}
+    }
+
+    #nyheter-og-tilbud {
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        form fieldset label input {
+            margin-left: 5px; 
+            margin-top: 15px; 
+            margin-bottom: 15px; 
+            padding: 5px; 
+            border-radius: 5px;
+        }
+        form fieldset button {
+            padding: 5px;
+            background-color: #ffcf40; 
+            border: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+        }
+        #footer-form{padding-bottom: 15px;}
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    #kundeservice {
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        ul {list-style: none; padding-left: 0;}
+        ul a {text-decoration: none; color: white;}
+    }
+
+    #sosiale-medier {
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        a {
+            color: white; 
+            padding: 10px;
+            font-size: 35px;
+        }
     }
 }
