@@ -920,6 +920,9 @@ body {
         flex-direction: row-reverse;
         justify-content: space-between;
         flex-wrap: wrap;
+        border-bottom-style: solid;
+        border-bottom-color: #e8e8e8;
+        border-bottom-width: 1px;
         section{
             display: flex;
             padding: 10px;
@@ -1315,6 +1318,334 @@ body {
                 margin-top: 0;
                 font-weight: bold;
             }
+        }
+    }
+
+    /*Hotell siden*/
+
+    /*Bilde galleri*/
+    #hotell-header-2 {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: rgba(60, 60, 60, 0.2);
+    }
+
+    #bildene {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        position: relative;
+        picture {
+            width: 100%;
+            object-fit: fill;
+        }
+        picture img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    /*----Bildene og deres plassering----*/
+    #en-solstol-foran-et-basseng {
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+    }
+    #folk-som-løper-ut-i-sjøen-fra-en-strand {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+    #bølger-fra-havet-faller-inn-over-en-strand {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+    }
+    #en-lagune-med-blått-vann-og-skip {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+    #en-kvinne-i-et-basseng-ser-utover-vannet {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+    #en-brygge-som-går-ut-til-hus-med-tak-av-strå {
+        grid-row: 2 / 4;
+        grid-column: 3 / 5;
+    }
+    /*---------------------------------------------*/
+
+    #ikoner-osv {
+        grid-row: 1 / 5;
+        grid-column: 4 / 5;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        justify-content: space-between;
+    }
+    #pil-ikoner-bilde-galleri {
+        display: none;
+        }
+    #bilde-og-antall-bilder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-end;
+        height: 50px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 20px;
+        border-color: rgba(60, 60, 60, 0.5);
+        padding: 5px;
+        margin: 10px;
+        margin-bottom: 20px;
+        color: #f6f5f2;
+        background-color: rgba(60, 60, 60, 0.5)
+    }
+    #red-heart {
+        align-self: flex-end;
+        height: 30px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 20px;
+        border-color: #f6f5f2;
+        padding: 7px;
+        margin: 10px;
+        background-color: #f6f5f2;
+    }
+
+    #hotell-header-navigering {
+        padding: 10px;
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding-left: 0;
+        }
+        .ikke-oversikt {
+            a {text-decoration: none;
+            color: black;
+            padding: 10px;}
+        }
+    }
+    #oversikt {
+        a {padding: 10px;
+        text-decoration: underline#1ca2c1 3px;
+        color: #1ca2c1;}
+    }
+
+
+
+
+    /*Bestillingssiden*/
+    #bestillingsside-main {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    /*Progressbar*/
+    #bestillingsside-progressbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        nav {
+            background-color: #1ca2c1;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        nav ul li, a, i {
+            display: flex;
+            align-items: center;
+        }
+        nav ul {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            list-style: none;
+            li {padding-left: 10px;}
+            i {
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: 35px;
+            }
+            a {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+            }
+            #opplysninger {font-weight: bold; font-size: 17px;}
+        }
+    }
+
+    /*Oversiktseksjon*/
+    #bestillingsside-oversiktseksjon {
+        display: flex;
+        width: 50%;
+        height: auto;
+        max-height: 875px;
+        padding: 10px;
+        details {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e8e8e8;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #e8e8e8;
+            margin: 10px;
+            width: 100%;
+            h3{opacity: 0.85;}
+            summary {
+                list-style: none;
+                font-weight: bold;
+                i{padding-left: 10px;}
+            }
+            picture img {
+                object-fit: cover;
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+        }
+        #bestillingsside-ikoner-og-beskrivelser {
+            display: flex;
+            flex-direction: column;
+            border-bottom: #e8e8e8;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            section {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                opacity: 0.85;
+                h3 {
+                    font-size: medium; 
+                    font-weight: 500;
+                    margin-left: 20px;
+                }
+            }
+        }
+        #bestillingsside-soler {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 25px;
+            color: #ffcf40;
+        }
+        #line-through-pris {
+            text-decoration: line-through;
+        }
+        #rød-pris {
+            color: red;
+            font-weight: bold;
+        }
+    }
+    #bestillingsside-oversiktseksjon-details {
+        summary {display: none;}
+    }
+
+    /*Bestillingsopplysninger*/
+    #bestillingsopplysninger {
+        width: 50%;
+        padding: 10px;
+        h2{font-weight: 900; font-size: 25px;}
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        form fieldset {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            background-color: #f6f5f2;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #f6f5f2;
+            border-radius: 10px;
+            legend {font-size: 17px; font-weight: bold;}
+            label {
+                font-weight: 600; 
+                font-size: 13px;
+            }
+            label, input {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            label input {
+                border-style: solid;
+                border-width: 1px;
+                border-color: #f6f5f2;
+                border-radius: 10px;
+            }
+            .kjønn {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                h3{font-size: 15px;}
+            }
+            .velg-kjønn{
+                display: flex;
+                flex-direction: row;
+                label {
+                    display: flex;
+                    width: 50%;
+                    align-items: center;
+                    input {margin-top: 0;}
+                }
+            }
+        }
+        #velg-land {
+            padding: 10px;
+            width: 100%;
+            h3{
+                font-size: 15px;
+            }
+            label {
+                background-color: white; 
+                padding: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #f6f5f2;
+                border-radius: 10px;
+            }
+            label select {
+                width: 95%;
+                background-color: white;
+                border-style: none;
+                opacity: 0.5;
+            }
+            label select option {
+                background-color: white;
+            }
+        }
+        #siste-trinn {
+            display: flex;
+            flex-direction: row;
+            font-size: 13px;
+            padding: 15px;
+            margin: 10px;
+            margin-left: 3px;
+            margin-top: 0;
+            width: 125px;
+            background-color: #ffcf40; 
+            border: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+            i {margin-left: 5px;}
         }
     }
 }
