@@ -690,7 +690,206 @@ body {
         }
     }
 
-    /**/
+    /*Bestillingsside*/
+    /*Progressbar*/
+    #bestillingsside-progressbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: auto;
+        position: relative;
+        nav {
+            background-color: #1ca2c1;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        nav ul li, a, i {
+            display: flex;
+            align-items: center;
+        }
+        nav ul {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow: auto;
+            white-space: nowrap;
+            list-style: none;
+            i {
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: 35px;
+            }
+            a {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+            }
+            #opplysninger {font-weight: bold; font-size: 17px;}
+        }
+    }
+
+    /*Oversiktseksjon*/
+    #bestillingsside-oversiktseksjon {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        details {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e8e8e8;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #e8e8e8;
+            margin: 10px;
+            width: 100%;
+            h3{opacity: 0.85;}
+            summary {
+                list-style: none;
+                font-weight: bold;
+                i{padding-left: 10px;}
+            }
+            picture img {
+                object-fit: cover;
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+        }
+        #bestillingsside-ikoner-og-beskrivelser {
+            display: flex;
+            flex-direction: column;
+            border-bottom: #e8e8e8;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            section {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                opacity: 0.85;
+                h3 {
+                    font-size: medium; 
+                    font-weight: 500;
+                    margin-left: 20px;
+                }
+            }
+        }
+        #bestillingsside-soler {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 25px;
+            color: #ffcf40;
+        }
+        #line-through-pris {
+            text-decoration: line-through;
+        }
+        #rød-pris {
+            color: red;
+            font-weight: bold;
+        }
+    }
+
+    /*Bestillingsopplysninger*/
+    #bestillingsopplysninger {
+        padding: 10px;
+        h2{font-weight: 900; font-size: 25px;}
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        form fieldset {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            background-color: #f6f5f2;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #f6f5f2;
+            border-radius: 10px;
+            legend {font-size: 17px; font-weight: bold;}
+            label {
+                font-weight: 600; 
+                font-size: 13px;
+            }
+            label, input {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            label input {
+                border-style: solid;
+                border-width: 1px;
+                border-color: #f6f5f2;
+                border-radius: 10px;
+            }
+            .kjønn {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                h3{font-size: 15px;}
+            }
+            .velg-kjønn{
+                display: flex;
+                flex-direction: row;
+                label {
+                    display: flex;
+                    width: 50%;
+                    align-items: center;
+                    input {margin-top: 0;}
+                }
+            }
+        }
+        #velg-land {
+            padding: 10px;
+            width: 100%;
+            h3{
+                font-size: 15px;
+            }
+            label {
+                background-color: white; 
+                padding: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #f6f5f2;
+                border-radius: 10px;
+            }
+            label select {
+                width: 95%;
+                background-color: white;
+                border-style: none;
+                opacity: 0.5;
+            }
+            label select option {
+                background-color: white;
+            }
+        }
+        #siste-trinn {
+            display: flex;
+            flex-direction: row;
+            font-size: 13px;
+            padding: 15px;
+            margin: 10px;
+            margin-left: 3px;
+            margin-top: 0;
+            width: 125px;
+            background-color: #ffcf40; 
+            border: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+            i {margin-left: 5px;}
+        }
+    }
 }
 
 

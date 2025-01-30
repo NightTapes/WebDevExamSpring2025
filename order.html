@@ -45,9 +45,9 @@
         </section>
     </header>
 
-    <main><!--Som jeg forstod det skulle alt innholdet på denne siden være i "main". Dette er da progressbaren (som også kunne vært i en header), skjemaet som tar imot info, og detaljene om den valgte reisen-->
-        <section>
-            <h2 class="hidden-headlines">Progressbar</h2><!--HIDE THIS-->
+    <main><!--Som jeg forstod det skulle alt innholdet på denne siden være i "main". Dette er da progressbaren (som også kunne vært i en egen header), skjemaet som tar imot info, og detaljene om den valgte reisen-->
+        <section id="bestillingsside-progressbar">
+            <h2 class="removed-headlines" aria-label="Progressbar">Progressbar</h2><!--HIDE THIS-->
             <nav>
                 <ul>
                     <li><a href="index.html#bestillingskjema">Søk<i class="fa-solid fa-angle-right"></i></a></li>
@@ -55,13 +55,70 @@
                     <li><a href="hotell.html#tilgjengelige-rom">Rom<i class="fa-solid fa-angle-right"></i></a></li>
                     <li><a href="https://www.norwegian.no" target="_blank">Fly<i class="fa-solid fa-angle-right"></i></a></li>
                     <li><a href="#">Tillegg<i class="fa-solid fa-angle-right"></i></a></li>
-                    <li><a href="order.html">OPPLYSNINGER<i class="fa-solid fa-angle-right"></i></a></li>
-                    <li><a>Bestill</a></li><!--LEGG TIL NÅR DEN ER LAGET-->
+                    <li><a href="order.html" id="opplysninger">OPPLYSNINGER<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="#siste-trinn">Bestill</a></li>
                 </ul>
             </nav>
         </section>
 
-        <section>
+        <section id="bestillingsside-oversiktseksjon">
+            <h2 class="removed-headlines" aria-label="Oversiktseksjon">Oversiktseksjon</h2><!--HIDE THIS-->
+            <details open><!--Denne kan få "open" som attributt - slik vil den være åpen hver gang siden lastes inn-->
+                <summary>Dine Valg<i class="fa-solid fa-angle-right"></i></summary><!--BARE DISPLAY: NONE; SUMMARY FOR Å SKJULE DEN, OG ALLTID HA DEN ÅPEN PÅ DESKTOP-->
+                <picture>
+                    <img src="Images/landscape-2016308_640.jpg" alt="En solstol foran et basseng.">
+                </picture>
+
+                <h3>Parga Beach</h3>
+
+                <section id="bestillingsside-soler">
+                    <h4 class="removed-headlines" aria-label="Score vist i antall soler">Soler</h4><!--HIDE THIS-->
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-regular fa-sun"></i><!--CHANGE THIS ONE-->
+                </section>
+
+                <section id="bestillingsside-ikoner-og-beskrivelser">
+                    <h4 class="removed-headlines" aria-label="Info og ikoner">Info og ikoner</h4><!--HIDE THIS-->
+                    <section>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Hellas, Parga</h3>
+                    </section>
+
+                    <section>
+                        <i class="fa-solid fa-calendar"></i>
+                        <h3>Man 5 mai - man 12 mai 2025</h3>
+                    </section>
+
+                    <section>
+                        <i class="fa-regular fa-user"></i>
+                        <h3>2 Voksne</h3>
+                    </section>
+
+                    <section>
+                        <i class="fa-solid fa-bed"></i>
+                        <h3>Deluxerom, Balkong og ikke spesifisert utsikt.</h3>
+                    </section>
+
+                    <section>
+                        <i class="fa-solid fa-utensils"></i>
+                        <h3>Frokostbuffé</h3>
+                    </section>
+
+                    <section>
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <h3>Oslo Lufthavn - Preveza</h3>
+                    </section>
+                </section>
+
+                <p id="line-through-pris">22 003,-</p>
+                <p id="rød-pris">19 803,-</p>
+            </details>
+        </section>
+
+        <section id="bestillingsopplysninger">
             <h2>Oppgi dine bestillingsopplysninger</h2>
             <form>
                 <fieldset><!--Kunne hatt en egen "form" tag for hver av disse 2 fieldsettene, men vet ikke om det hadde vært bedre eller dårligere. Ut ifra det jeg fant på nettet ser det ut som det er helt greit å ha flere fieldsets i én form-tag.-->
@@ -73,14 +130,22 @@
                         <input type="text" id="etternavn-hoved" name="etternavn-hoved" maxlength="30" required>
                     </label>
                     <label for="fødselsdato-hoved">FØDSELSDATO:
-                        <input type="date" id="fødselsdato-hoved" name="fødselsdato-hoved" required><!--Dag, måned, og år er spredt ut i sin egen boks på bildene av nettsiden. Kom tilbake til det. Ser ut som 3 input felt med number attributten.-->
+                        <input type="date" id="fødselsdato-hoved" name="fødselsdato-hoved" required><!--Dag, måned, og år er spredt ut i sin egen boks på bildene av nettsiden. Kom tilbake til det. Ser ut som 3 ulike input felt med number attributten.-->
                     </label>
-                    <label for="kjønn-kvinne">KVINNE
-                        <input type="radio" id="kjønn-kvinne" name="kjønn-hoved" value="kvinne" required>
-                    </label>
-                    <label for="kjønn-mann">MANN
-                        <input type="radio" id="kjønn-mann" name="kjønn-hoved" value="mann" required>
-                    </label>
+
+                    <section class="kjønn">
+                        <h3>Kjønn:</h3>
+                        <section class="velg-kjønn">
+                            <h4 class="removed-headlines" aria-label="Velg kjønn">Velg kjønn</h4>
+                            <label for="kjønn-kvinne">KVINNE
+                                <input type="radio" id="kjønn-kvinne" name="kjønn-hoved" value="kvinne" required>
+                            </label>
+                            <label for="kjønn-mann">MANN
+                                <input type="radio" id="kjønn-mann" name="kjønn-hoved" value="mann" required>
+                            </label>
+                        </section>
+                    </section>
+
                     <label for="epost-hoved">E-POSTADRESSE:
                         <input type="email" id="epost-hoved" name="epost-hoved" required>
                     </label>
@@ -96,15 +161,19 @@
                     <label for="poststed-hoved">POSTSTED:
                         <input type="text" id="poststed-hoved" name="poststed-hoved" maxlength="50" required>
                     </label>
-                    <label for="land-hoved">LAND:
-                        <select name="land-hoved" id="land-hoved">
-                            <option value="velg-et-land">Velg et land</option>
-                            <option value="albania">Albania</option>
-                            <option value="danmark">Danmark</option>
-                            <option value="finland">Finland</option>
-                            <option value="hellas">Hellas</option>
-                        </select>
-                    </label>
+
+                    <section id="velg-land">
+                        <h3>Land:</h3>
+                        <label for="land-hoved">
+                            <select name="land-hoved" id="land-hoved">
+                                <option value="velg-et-land">Velg et land</option>
+                                <option value="albania">Albania</option>
+                                <option value="danmark">Danmark</option>
+                                <option value="finland">Finland</option>
+                                <option value="hellas">Hellas</option>
+                            </select>
+                        </label>
+                    </section>
                 </fieldset>
 
                 <fieldset>
@@ -118,48 +187,26 @@
                     <label for="fødselsdato">FØDSELSDATO:
                         <input type="date" id="fødselsdato" name="fødselsdato" required><!--Dag, måned, og år er spredt ut i sin egen boks på bildene av nettsiden. Kom tilbake til det. Ser ut som 3 input felt med number attributten.-->
                     </label>
-                    <label for="kjønn-kvinne-2">KVINNE
-                        <input type="radio" id="kjønn-kvinne-2" name="kjønn-hoved-2" value="kvinne" required>
-                    </label>
-                    <label for="kjønn-mann-2">MANN
-                        <input type="radio" id="kjønn-mann-2" name="kjønn-hoved-2" value="mann" required>
-                    </label>
+
+                    <section class="kjønn">
+                        <h3>Kjønn:</h3>
+                        <section class="velg-kjønn">
+                            <h4 class="removed-headlines" aria-label="Velg kjønn">Velg kjønn</h4>
+                            <label for="kjønn-kvinne-2">KVINNE
+                                <input type="radio" id="kjønn-kvinne-2" name="kjønn-hoved-2" value="kvinne" required>
+                            </label>
+                            <label for="kjønn-mann-2">MANN
+                                <input type="radio" id="kjønn-mann-2" name="kjønn-hoved-2" value="mann" required>
+                            </label>
+                        </section>
+                    </section>
+
                 </fieldset>
 
-                <label for="order-page-siste-trinn">Siste Trinn<i class="fa-solid fa-arrow-right"></i>
+                <label for="order-page-siste-trinn" id="siste-trinn">Siste Trinn<i class="fa-solid fa-arrow-right"></i>
                     <input type="submit" id="order-page-siste-trinn">
                 </label>
             </form>
-        </section>
-
-        <section>
-            <h2 class="hidden-headlines">Oversiktseksjon</h2><!--HIDE THIS-->
-            <details open>
-                <summary>Dine Valg<i class="fa-solid fa-angle-right"></i></summary><!--BARE DISPLAY: NONE; SUMMARY FOR Å SKJULE DEN, OG ALLTID HA DEN ÅPEN PÅ DESKTOP-->
-                <picture>
-                    <img src="Images/landscape-2016308_640.jpg" alt="En solstol foran et basseng.">
-                </picture>
-                <h3>Parga Beach</h3>
-                <section>
-                    <h4 class="hidden-headlines">Soler</h4><!--HIDE THIS-->
-                    <i class="fa-solid fa-sun"></i>
-                    <i class="fa-solid fa-sun"></i>
-                    <i class="fa-solid fa-sun"></i>
-                    <i class="fa-solid fa-sun"></i>
-                    <i class="fa-regular fa-sun"></i><!--CHANGE THIS ONE-->
-                </section>
-                <section>
-                    <h4 class="hidden-headlines">Info og ikoner</h4><!--HIDE THIS-->
-                    <i class="fa-solid fa-location-dot">Hellas, Parga</i>
-                    <i class="fa-solid fa-calendar">Man 5 mai - man 12 mai 2025</i>
-                    <i class="fa-regular fa-user">2 Voksne</i>
-                    <i class="fa-solid fa-bed">Deluxerom, Balkong og ikke spesifisert utsikt.</i>
-                    <i class="fa-solid fa-utensils">Frokostbuffé</i>
-                    <i class="fa-solid fa-plane-departure">Oslo Lufthavn - Preveza</i>
-                </section>
-                <p>22 003,-</p>
-                <p>19 803,-</p>
-            </details>
         </section>
     </main>
 
