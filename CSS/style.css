@@ -1568,7 +1568,8 @@ body {
         }
         form fieldset {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
             margin-bottom: 20px;
             background-color: #f6f5f2;
             border-style: solid;
@@ -1581,11 +1582,12 @@ body {
                 font-size: 13px;
             }
             label, input {
-                width: 100%;
+                width: 50%;
                 padding: 10px;
                 margin-top: 10px;
             }
             label input {
+                width: 100%;
                 border-style: solid;
                 border-width: 1px;
                 border-color: #f6f5f2;
@@ -1604,17 +1606,25 @@ body {
                     display: flex;
                     width: 50%;
                     align-items: center;
+                    font-size: 15px;
                     input {margin-top: 0;}
                 }
             }
         }
         #velg-land {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
             padding: 10px;
-            width: 100%;
+            width: 50%;
             h3{
+                width: 100%;
                 font-size: 15px;
+                margin: 0;
+                margin-top: 7px;
             }
             label {
+                width: 100%;
                 background-color: white; 
                 padding: 10px;
                 border-style: solid;
@@ -1623,7 +1633,7 @@ body {
                 border-radius: 10px;
             }
             label select {
-                width: 95%;
+                width: 100%;
                 background-color: white;
                 border-style: none;
                 opacity: 0.5;
@@ -1644,7 +1654,7 @@ body {
             background-color: #ffcf40; 
             border: none; 
             border-radius: 5px; 
-            font-weight: bold;
+            font-weight: 850;
             i {margin-left: 5px;}
         }
     }
