@@ -14,11 +14,11 @@ body {
 }
 
 .hidden-headlines {
-    visibility: hidden; /*Kanskje endre til display none slik at de ikke tar opp plass*/
+    visibility: hidden;
 }
 
 .removed-headlines {
-    display: none; /*Denne er for overskriftene som ikke gir noe semantisk eller hjelpsom info, og trenger derfor ikke bli sett av f.eks. skjermopplesere*/
+    display: none; /*Denne er for overskriftene som ikke gir noe semantisk eller hjelpsom info, og trenger derfor ikke bli sett av f.eks. skjermopplesere. Er det viktig info har de fått aria-labels for å sikre accessibility*/
 }
 
 #logo {width: 75px;}
@@ -1551,7 +1551,7 @@ body {
         width: 100%;
         height: auto;
         padding: 10px;
-        justify-content: space-between;
+        justify-content: flex-start;
         h2{width: 100%; font-weight: 800;}
         article {
             display: flex;
